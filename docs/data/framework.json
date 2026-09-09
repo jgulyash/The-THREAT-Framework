@@ -19586,9 +19586,11 @@
               ],
               "limitations": "Depends on voluntary compliance across tenants and employees; some occupancy and event detail is operationally necessary to publish and cannot be suppressed",
               "compensates_for": [
-                "IND-F0102-02",
-                "IND-F0102-03",
                 "CM-0103-01"
+              ],
+              "mitigates": [
+                {"indicator": "IND-F0102-02", "function": "unreviewed"},
+                {"indicator": "IND-F0102-03", "function": "unreviewed"}
               ],
               "source_refs": [
                 "GULYASH-FIELD-OPS-2004-2026",
@@ -19608,8 +19610,9 @@
                 "mobilization"
               ],
               "limitations": "Addresses predictable date-driven exposure but not opportunistic timing; over-application across many dates dilutes attention and strains resources",
-              "compensates_for": [
-                "IND-F0102-03"
+              "compensates_for": [],
+              "mitigates": [
+                {"indicator": "IND-F0102-03", "function": "unreviewed"}
               ],
               "source_refs": [
                 "GULYASH-FIELD-OPS-2004-2026",
@@ -20091,10 +20094,11 @@
                 "target_development"
               ],
               "limitations": "Fixed environmental changes cannot remove public vantage points across the street or from adjacent property; raises the cost and exposure of observation without eliminating it, and drive-by observation defeats most sightline controls",
-              "compensates_for": [
-                "IND-F0103-01",
-                "IND-F0103-02",
-                "IND-F0103-05"
+              "compensates_for": [],
+              "mitigates": [
+                {"indicator": "IND-F0103-01", "function": "unreviewed"},
+                {"indicator": "IND-F0103-02", "function": "unreviewed"},
+                {"indicator": "IND-F0103-05", "function": "unreviewed"}
               ],
               "source_refs": [
                 "GULYASH-FIELD-OPS-2004-2026",
@@ -20114,8 +20118,9 @@
                 "mobilization"
               ],
               "limitations": "Randomization raises the observation burden but cannot fully mask fixed events like opening hours, deliveries, and occupancy peaks; effectiveness decays if patrols settle back into a predictable pattern",
-              "compensates_for": [
-                "IND-F0103-03"
+              "compensates_for": [],
+              "mitigates": [
+                {"indicator": "IND-F0103-03", "function": "unreviewed"}
               ],
               "source_refs": [
                 "GULYASH-FIELD-OPS-2004-2026",
@@ -20135,8 +20140,10 @@
               ],
               "limitations": "Access instrumentation catches probing at controlled points but not observation from public ground; alarm and log review depend on staffing and tuning, and gentle handle-testing may not register as a forced-door event",
               "compensates_for": [
-                "IND-F0103-04",
                 "CM-0103-02"
+              ],
+              "mitigates": [
+                {"indicator": "IND-F0103-04", "function": "unreviewed"}
               ],
               "source_refs": [
                 "GULYASH-FIELD-OPS-2004-2026",
@@ -21157,9 +21164,11 @@
               ],
               "limitations": "Low-level probes are individually mundane and easily dismissed as nuisance alarms; correlation depends on retention, disciplined logging, and analysts empowered to connect events across shifts",
               "compensates_for": [
-                "IND-F0105-05",
                 "CM-I0103-04",
                 "CM-O0210-01"
+              ],
+              "mitigates": [
+                {"indicator": "IND-F0105-05", "function": "unreviewed"}
               ],
               "source_refs": [
                 "GULYASH-FIELD-OPS-2004-2026",
@@ -21179,9 +21188,11 @@
               ],
               "limitations": "Randomization raises the cost of pattern mapping but cannot conceal fixed infrastructure (camera mounts, door hardware, standoff); determined observation over time still recovers averages",
               "compensates_for": [
-                "IND-F0105-02",
-                "IND-F0105-04",
                 "CM-O0210-02"
+              ],
+              "mitigates": [
+                {"indicator": "IND-F0105-02", "function": "unreviewed"},
+                {"indicator": "IND-F0105-04", "function": "unreviewed"}
               ],
               "source_refs": [
                 "GULYASH-FIELD-OPS-2004-2026",
@@ -21202,9 +21213,11 @@
               ],
               "limitations": "Coverage upgrades are capital-intensive and slow to field; new equipment introduces its own configuration gaps and requires trained monitoring to convert detection into response",
               "compensates_for": [
-                "IND-F0105-01",
-                "IND-F0105-03",
                 "CM-I0103-01"
+              ],
+              "mitigates": [
+                {"indicator": "IND-F0105-01", "function": "unreviewed"},
+                {"indicator": "IND-F0105-03", "function": "unreviewed"}
               ],
               "source_refs": [
                 "GULYASH-FIELD-OPS-2004-2026",
@@ -22705,11 +22718,13 @@
               ],
               "limitations": "Effective only if staff follow the process under time pressure; a well-built legend with a live callback number and matching paperwork can still pass, and social pressure at a busy dock erodes discipline",
               "compensates_for": [
-                "IND-F0108-01",
-                "IND-F0108-02",
                 "CM-I0106-03",
                 "CM-I0109-03",
                 "CM-O0205-02"
+              ],
+              "mitigates": [
+                {"indicator": "IND-F0108-01", "function": "unreviewed"},
+                {"indicator": "IND-F0108-02", "function": "unreviewed"}
               ],
               "source_refs": [
                 "GULYASH-FIELD-OPS-2004-2026",
@@ -22729,8 +22744,9 @@
                 "execution"
               ],
               "limitations": "Raises the cost of forging credentials but cannot stop an actor who secures genuine cover employment or matches an approved vendor closely enough; badge standards leak to determined observers",
-              "compensates_for": [
-                "IND-F0108-02"
+              "compensates_for": [],
+              "mitigates": [
+                {"indicator": "IND-F0108-02", "function": "unreviewed"}
               ],
               "source_refs": [
                 "GULYASH-FIELD-OPS-2004-2026",
@@ -22751,9 +22767,11 @@
               ],
               "limitations": "Depends on staff confidence and turnover; awareness fades without reinforcement, and a durable, well-rehearsed legend is specifically designed to survive a routine challenge",
               "compensates_for": [
-                "IND-F0108-01",
-                "IND-F0108-04",
                 "CM-O0108-04"
+              ],
+              "mitigates": [
+                {"indicator": "IND-F0108-01", "function": "unreviewed"},
+                {"indicator": "IND-F0108-04", "function": "unreviewed"}
               ],
               "source_refs": [
                 "GULYASH-FIELD-OPS-2004-2026",
@@ -22773,11 +22791,13 @@
               ],
               "limitations": "Screening reduces but does not eliminate cover employment; seeded histories and shell entities can pass a check, and screening reaches employees and prime vendors more reliably than subcontractors and temporary labor",
               "compensates_for": [
-                "IND-F0108-03",
-                "IND-F0108-05",
                 "CM-0106-01",
                 "CM-I0106-02",
                 "CM-I0109-04"
+              ],
+              "mitigates": [
+                {"indicator": "IND-F0108-03", "function": "unreviewed"},
+                {"indicator": "IND-F0108-05", "function": "unreviewed"}
               ],
               "source_refs": [
                 "GULYASH-FIELD-OPS-2004-2026",
@@ -23802,9 +23822,10 @@
                 "mobilization"
               ],
               "limitations": "Covert coverage is expensive to sustain and degrades once patterns leak; a disciplined actor running surveillance-detection routes may still detect and adapt to it over repeated visits",
-              "compensates_for": [
-                "IND-F0110-02",
-                "IND-F0110-03"
+              "compensates_for": [],
+              "mitigates": [
+                {"indicator": "IND-F0110-02", "function": "unreviewed"},
+                {"indicator": "IND-F0110-03", "function": "unreviewed"}
               ],
               "source_refs": [
                 "GULYASH-FIELD-OPS-2004-2026",
@@ -23823,9 +23844,10 @@
                 "target_development"
               ],
               "limitations": "Randomization trades efficiency for unpredictability and can degrade coverage of fixed critical points; determined actors compensate by sampling across more visits",
-              "compensates_for": [
-                "IND-F0110-01",
-                "IND-F0110-04"
+              "compensates_for": [],
+              "mitigates": [
+                {"indicator": "IND-F0110-01", "function": "unreviewed"},
+                {"indicator": "IND-F0110-04", "function": "unreviewed"}
               ],
               "source_refs": [
                 "GULYASH-FIELD-OPS-2004-2026",
@@ -23845,8 +23867,10 @@
               ],
               "limitations": "Test events individually resemble routine nuisance incidents; correlation requires disciplined logging and analytic capacity many facilities lack, and closed or oblique probing may never enter the pipeline",
               "compensates_for": [
-                "IND-F0110-01",
                 "CM-0108-01"
+              ],
+              "mitigates": [
+                {"indicator": "IND-F0110-01", "function": "unreviewed"}
               ],
               "source_refs": [
                 "GULYASH-FIELD-OPS-2004-2026",
@@ -24326,9 +24350,11 @@
               ],
               "limitations": "Randomization raises the cost of a rehearsed plan but does not detect the actor; sustaining true unpredictability strains staffing, and a determined actor may re-rehearse against the new pattern",
               "compensates_for": [
-                "IND-F0201-01",
-                "IND-F0201-05",
                 "CM-I0201-04"
+              ],
+              "mitigates": [
+                {"indicator": "IND-F0201-01", "function": "unreviewed"},
+                {"indicator": "IND-F0201-05", "function": "unreviewed"}
               ],
               "source_refs": [
                 "GULYASH-FIELD-OPS-2004-2026",
@@ -24348,8 +24374,10 @@
               ],
               "limitations": "Depends on staff reporting discipline and the tendency to dismiss repeated false alarms as faults; a single probe is easy to rationalize, and neighbor reporting is uneven",
               "compensates_for": [
-                "IND-F0201-03",
                 "CM-I0203-04"
+              ],
+              "mitigates": [
+                {"indicator": "IND-F0201-03", "function": "unreviewed"}
               ],
               "source_refs": [
                 "GULYASH-FIELD-OPS-2004-2026",
@@ -24369,8 +24397,10 @@
               ],
               "limitations": "Reactive by design: it acts only after a probe is noticed, and it cannot resolve intent from a single event; posture elevation is temporary and resource-limited",
               "compensates_for": [
-                "IND-F0201-03",
                 "CM-I0203-02"
+              ],
+              "mitigates": [
+                {"indicator": "IND-F0201-03", "function": "unreviewed"}
               ],
               "source_refs": [
                 "GULYASH-FIELD-OPS-2004-2026",
@@ -25371,9 +25401,10 @@
                 "mobilization"
               ],
               "limitations": "Hardening rarely stops a committed actor outright; it buys detection and response time rather than denial, and rated barriers are costly to retrofit around long or irregular boundaries",
-              "compensates_for": [
-                "IND-F0203-02",
-                "IND-F0203-03"
+              "compensates_for": [],
+              "mitigates": [
+                {"indicator": "IND-F0203-02", "function": "unreviewed"},
+                {"indicator": "IND-F0203-03", "function": "unreviewed"}
               ],
               "source_refs": [
                 "GULYASH-FIELD-OPS-2004-2026",
@@ -25394,10 +25425,12 @@
               ],
               "limitations": "Nuisance alarms from wildlife, weather, and vegetation degrade trust in the system; coverage gaps and blind spots persist on long perimeters, and detection without a response force only documents the breach",
               "compensates_for": [
-                "IND-F0203-01",
-                "IND-F0203-05",
                 "CM-0203-02",
                 "CM-I0209-03"
+              ],
+              "mitigates": [
+                {"indicator": "IND-F0203-01", "function": "unreviewed"},
+                {"indicator": "IND-F0203-05", "function": "unreviewed"}
               ],
               "source_refs": [
                 "GULYASH-FIELD-OPS-2004-2026",
@@ -25418,10 +25451,12 @@
               ],
               "limitations": "Guard response cannot prevent a determined, coordinated, or armed breach at the point of contact; officer safety and use-of-force constraints limit interdiction, and staffing costs recur",
               "compensates_for": [
-                "IND-F0203-03",
-                "IND-F0203-04",
                 "CM-I0204-04",
                 "CM-I0209-04"
+              ],
+              "mitigates": [
+                {"indicator": "IND-F0203-03", "function": "unreviewed"},
+                {"indicator": "IND-F0203-04", "function": "unreviewed"}
               ],
               "source_refs": [
                 "GULYASH-FIELD-OPS-2004-2026",
@@ -25441,9 +25476,11 @@
               ],
               "limitations": "Clear zones and layered standoff require land and sightlines many sites lack; the approach slows an actor and improves detection but does not stop a breach on its own",
               "compensates_for": [
-                "IND-F0203-02",
-                "IND-F0203-05",
                 "CM-I0204-03"
+              ],
+              "mitigates": [
+                {"indicator": "IND-F0203-02", "function": "unreviewed"},
+                {"indicator": "IND-F0203-05", "function": "unreviewed"}
               ],
               "source_refs": [
                 "GULYASH-FIELD-OPS-2004-2026",
@@ -25921,10 +25958,12 @@
               ],
               "limitations": "Costly to retrofit into existing floor plans; tailgating and held-open doors defeat readers behaviorally, and legitimate high-traffic interior flow limits how tightly zones can be locked during operating hours",
               "compensates_for": [
-                "IND-F0204-01",
-                "IND-F0204-03",
                 "CM-I0208-04",
                 "CM-I0209-01"
+              ],
+              "mitigates": [
+                {"indicator": "IND-F0204-01", "function": "unreviewed"},
+                {"indicator": "IND-F0204-03", "function": "unreviewed"}
               ],
               "source_refs": [
                 "GULYASH-FIELD-OPS-2004-2026",
@@ -25945,10 +25984,12 @@
               ],
               "limitations": "Interior blind spots persist in stairwells and service areas; analytics generate false positives in high-traffic interiors, and detection alone does not stop a fast-moving actor without a paired response capability",
               "compensates_for": [
-                "IND-F0204-02",
-                "IND-F0204-04",
                 "CM-I0208-01",
                 "CM-I0209-03"
+              ],
+              "mitigates": [
+                {"indicator": "IND-F0204-02", "function": "unreviewed"},
+                {"indicator": "IND-F0204-04", "function": "unreviewed"}
               ],
               "source_refs": [
                 "GULYASH-FIELD-OPS-2004-2026",
@@ -25969,9 +26010,11 @@
               ],
               "limitations": "Effectiveness depends on staff willingness to challenge and on consistent enforcement; social-engineering pretexts and authority intimidation suppress challenge, and challenge itself can trigger a violent response from a committed actor",
               "compensates_for": [
-                "IND-F0204-03",
-                "IND-F0204-05",
                 "CM-0204-01"
+              ],
+              "mitigates": [
+                {"indicator": "IND-F0204-03", "function": "unreviewed"},
+                {"indicator": "IND-F0204-05", "function": "unreviewed"}
               ],
               "source_refs": [
                 "GULYASH-FIELD-OPS-2004-2026",
@@ -25991,9 +26034,10 @@
                 "execution"
               ],
               "limitations": "Lockdown can trap occupants with a hostile actor if not paired with protected egress; life-safety codes constrain how interior egress may be secured, and compartmentalization delays rather than defeats a determined actor",
-              "compensates_for": [
-                "IND-F0204-04",
-                "IND-F0204-05"
+              "compensates_for": [],
+              "mitigates": [
+                {"indicator": "IND-F0204-04", "function": "unreviewed"},
+                {"indicator": "IND-F0204-05", "function": "unreviewed"}
               ],
               "source_refs": [
                 "GULYASH-FIELD-OPS-2004-2026",
@@ -26467,9 +26511,11 @@
               ],
               "limitations": "Screening covers defined entry paths; materiel introduced through unscreened routes, insider facilitation, or perimeter placement can bypass it, and canine and trace coverage is intermittent rather than continuous",
               "compensates_for": [
-                "IND-F0205-01",
-                "IND-F0205-03",
                 "CM-I0209-01"
+              ],
+              "mitigates": [
+                {"indicator": "IND-F0205-01", "function": "unreviewed"},
+                {"indicator": "IND-F0205-03", "function": "unreviewed"}
               ],
               "source_refs": [
                 "GULYASH-FIELD-OPS-2004-2026",
@@ -26489,8 +26535,10 @@
               ],
               "limitations": "Standoff is constrained by site geometry, streetscape, and access needs; achievable distance may be limited, and barriers must be rated to the credible vehicle threat to be effective",
               "compensates_for": [
-                "IND-F0205-04",
                 "CM-I0308-04"
+              ],
+              "mitigates": [
+                {"indicator": "IND-F0205-04", "function": "unreviewed"}
               ],
               "source_refs": [
                 "GULYASH-FIELD-OPS-2004-2026",
@@ -26511,10 +26559,12 @@
               ],
               "limitations": "Depends on staff vigilance and reporting discipline; high false-positive volume can dull response, and concealed or disguised placements may defeat visual sweeps",
               "compensates_for": [
-                "IND-F0205-02",
-                "IND-F0205-04",
                 "CM-I0209-03",
                 "CM-I0308-04"
+              ],
+              "mitigates": [
+                {"indicator": "IND-F0205-02", "function": "unreviewed"},
+                {"indicator": "IND-F0205-04", "function": "unreviewed"}
               ],
               "source_refs": [
                 "GULYASH-FIELD-OPS-2004-2026",
@@ -26534,9 +26584,10 @@
                 "execution"
               ],
               "limitations": "Reduces consequence rather than preventing emplacement; effectiveness depends on response time, evacuation route capacity, and pre-established liaison with EOD and fire services",
-              "compensates_for": [
-                "IND-F0205-05",
-                "IND-F0205-02"
+              "compensates_for": [],
+              "mitigates": [
+                {"indicator": "IND-F0205-05", "function": "unreviewed"},
+                {"indicator": "IND-F0205-02", "function": "unreviewed"}
               ],
               "source_refs": [
                 "GULYASH-FIELD-OPS-2004-2026",
@@ -27514,8 +27565,9 @@
                 "mobilization"
               ],
               "limitations": "Randomization raises the cost of solving the schedule but a patient actor with sustained observation or insider access can still reconstruct the pattern; adds staffing overhead",
-              "compensates_for": [
-                "IND-F0207-03"
+              "compensates_for": [],
+              "mitigates": [
+                {"indicator": "IND-F0207-03", "function": "unreviewed"}
               ],
               "source_refs": [
                 "GULYASH-FIELD-OPS-2004-2026",
@@ -27535,8 +27587,9 @@
                 "execution"
               ],
               "limitations": "Effective only for anticipated windows; an actor may deliberately choose an unremarkable date to avoid the elevated posture, and continuous elevation is not sustainable",
-              "compensates_for": [
-                "IND-F0207-02"
+              "compensates_for": [],
+              "mitigates": [
+                {"indicator": "IND-F0207-02", "function": "unreviewed"}
               ],
               "source_refs": [
                 "GULYASH-FIELD-OPS-2004-2026",
@@ -27555,8 +27608,9 @@
                 "mobilization"
               ],
               "limitations": "High-occupancy windows generate heavy legitimate traffic that masks a probing actor; analytics require tuning to avoid overwhelming staff with false correlations",
-              "compensates_for": [
-                "IND-F0207-04"
+              "compensates_for": [],
+              "mitigates": [
+                {"indicator": "IND-F0207-04", "function": "unreviewed"}
               ],
               "source_refs": [
                 "GULYASH-FIELD-OPS-2004-2026",
@@ -27575,8 +27629,9 @@
                 "mobilization"
               ],
               "limitations": "Public-facing venues must advertise service and event times to function; timing information cannot be fully withdrawn, only made less precise",
-              "compensates_for": [
-                "IND-F0207-01"
+              "compensates_for": [],
+              "mitigates": [
+                {"indicator": "IND-F0207-01", "function": "unreviewed"}
               ],
               "source_refs": [
                 "GULYASH-FIELD-OPS-2004-2026"
@@ -29612,9 +29667,11 @@
               ],
               "limitations": "Fixed standoff is costly and constrained by site geometry; interior and pedestrian-accessible spaces may still be reachable, and insiders with credentialed access can bypass perimeter screening",
               "compensates_for": [
-                "IND-F0302-01",
-                "IND-F0302-03",
                 "CM-I0304-01"
+              ],
+              "mitigates": [
+                {"indicator": "IND-F0302-01", "function": "unreviewed"},
+                {"indicator": "IND-F0302-03", "function": "unreviewed"}
               ],
               "source_refs": [
                 "GULYASH-FIELD-OPS-2004-2026",
@@ -29634,8 +29691,9 @@
                 "execution"
               ],
               "limitations": "Depends on staff attentiveness and reporting discipline; concealed or vehicle-borne devices may not present as an unattended item, and the interdiction window can be very short",
-              "compensates_for": [
-                "IND-F0302-01"
+              "compensates_for": [],
+              "mitigates": [
+                {"indicator": "IND-F0302-01", "function": "unreviewed"}
               ],
               "source_refs": [
                 "GULYASH-FIELD-OPS-2004-2026",
@@ -29655,8 +29713,9 @@
                 "aftermath"
               ],
               "limitations": "Assembly areas can themselves be targeted; route sweeps take time under mass-casualty pressure, and a determined actor may anticipate standard evacuation patterns",
-              "compensates_for": [
-                "IND-F0302-05"
+              "compensates_for": [],
+              "mitigates": [
+                {"indicator": "IND-F0302-05", "function": "unreviewed"}
               ],
               "source_refs": [
                 "GULYASH-FIELD-OPS-2004-2026",
@@ -29676,8 +29735,10 @@
               ],
               "limitations": "Structural hardening is expensive, most feasible in new construction, and reduces but does not eliminate casualties from an interior or close-in device",
               "compensates_for": [
-                "IND-F0302-02",
                 "CM-I0304-01"
+              ],
+              "mitigates": [
+                {"indicator": "IND-F0302-02", "function": "unreviewed"}
               ],
               "source_refs": [
                 "GULYASH-FIELD-OPS-2004-2026",
@@ -30143,9 +30204,10 @@
                 "execution"
               ],
               "limitations": "Instrumentation covers only the members chosen for it; covert tampering on an uninstrumented element, or suppression of the telemetry, defeats detection. Inspection intervals leave windows in which compromise can be staged and concealed",
-              "compensates_for": [
-                "IND-F0303-03",
-                "IND-F0303-05"
+              "compensates_for": [],
+              "mitigates": [
+                {"indicator": "IND-F0303-03", "function": "unreviewed"},
+                {"indicator": "IND-F0303-05", "function": "unreviewed"}
               ],
               "source_refs": [
                 "GULYASH-FIELD-OPS-2004-2026",
@@ -30165,9 +30227,10 @@
                 "execution"
               ],
               "limitations": "Structural spaces are often shared with legitimate maintenance and utility access, creating cover; an insider or credentialed contractor retains authorized reach to the very members most at risk",
-              "compensates_for": [
-                "IND-F0303-01",
-                "IND-F0303-02"
+              "compensates_for": [],
+              "mitigates": [
+                {"indicator": "IND-F0303-01", "function": "unreviewed"},
+                {"indicator": "IND-F0303-02", "function": "unreviewed"}
               ],
               "source_refs": [
                 "GULYASH-FIELD-OPS-2004-2026",
@@ -30186,9 +30249,10 @@
                 "execution"
               ],
               "limitations": "Capital-intensive and constrained by existing construction; redundancy raises the number of members an actor must compromise but does not make sabotage impossible, and retrofit of an occupied structure is slow",
-              "compensates_for": [
-                "IND-F0303-01",
-                "IND-F0303-04"
+              "compensates_for": [],
+              "mitigates": [
+                {"indicator": "IND-F0303-01", "function": "unreviewed"},
+                {"indicator": "IND-F0303-04", "function": "unreviewed"}
               ],
               "source_refs": [
                 "GULYASH-FIELD-OPS-2004-2026",
@@ -30208,9 +30272,10 @@
                 "aftermath"
               ],
               "limitations": "Effective only if the compromise is detected before failure; a covert attack staged to collapse without warning gives no trigger, and evacuation of a large occupied structure takes time the actor may have denied",
-              "compensates_for": [
-                "IND-F0303-02",
-                "IND-F0303-04"
+              "compensates_for": [],
+              "mitigates": [
+                {"indicator": "IND-F0303-02", "function": "unreviewed"},
+                {"indicator": "IND-F0303-04", "function": "unreviewed"}
               ],
               "source_refs": [
                 "GULYASH-FIELD-OPS-2004-2026",
@@ -30679,8 +30744,10 @@
               ],
               "limitations": "Supervision reports the impairment but does not physically prevent it, and an insider who controls the impairment-permit process or the monitoring path can suppress the very signals meant to catch the act",
               "compensates_for": [
-                "IND-F0304-01",
                 "CM-I0309-03"
+              ],
+              "mitigates": [
+                {"indicator": "IND-F0304-01", "function": "unreviewed"}
               ],
               "source_refs": [
                 "GULYASH-FIELD-OPS-2004-2026",
@@ -30700,9 +30767,10 @@
                 "execution"
               ],
               "limitations": "Segmentation is undermined by legacy controllers that cannot be patched or authenticated, by convenience remote-access links, and by an insider with legitimate OT credentials whose commands look authorized",
-              "compensates_for": [
-                "IND-F0304-03",
-                "IND-F0304-04"
+              "compensates_for": [],
+              "mitigates": [
+                {"indicator": "IND-F0304-03", "function": "unreviewed"},
+                {"indicator": "IND-F0304-04", "function": "unreviewed"}
               ],
               "source_refs": [
                 "GULYASH-FIELD-OPS-2004-2026",
@@ -30723,10 +30791,12 @@
               ],
               "limitations": "Raises the effort and exposure required to reach a control point but does not stop an insider or vendor with authorized access to these spaces, and cannot be applied uniformly to intakes and infrastructure that must remain functionally accessible",
               "compensates_for": [
-                "IND-F0304-02",
-                "IND-F0304-05",
                 "CM-I0304-01",
                 "CM-I0309-02"
+              ],
+              "mitigates": [
+                {"indicator": "IND-F0304-02", "function": "unreviewed"},
+                {"indicator": "IND-F0304-05", "function": "unreviewed"}
               ],
               "source_refs": [
                 "GULYASH-FIELD-OPS-2004-2026",
@@ -30748,9 +30818,11 @@
               ],
               "limitations": "Redundancy and fail-safe design are capital-intensive and constrained by existing building infrastructure; a determined actor with system knowledge may target the redundancy or the sensing itself, and rapid-shutdown capability depends on correct human decision under time pressure",
               "compensates_for": [
-                "IND-F0304-02",
-                "IND-F0304-03",
                 "CM-I0304-02"
+              ],
+              "mitigates": [
+                {"indicator": "IND-F0304-02", "function": "unreviewed"},
+                {"indicator": "IND-F0304-03", "function": "unreviewed"}
               ],
               "source_refs": [
                 "GULYASH-FIELD-OPS-2004-2026",
@@ -31214,10 +31286,12 @@
               ],
               "limitations": "Effective only where the rating matches the credible vehicle mass and speed; gaps at service entrances, temporary events, or unrated frontages leave exploitable approaches, and retrofits are costly and slow",
               "compensates_for": [
-                "IND-F0305-01",
-                "IND-F0305-02",
-                "IND-F0305-05",
                 "CM-0301-02"
+              ],
+              "mitigates": [
+                {"indicator": "IND-F0305-01", "function": "unreviewed"},
+                {"indicator": "IND-F0305-02", "function": "unreviewed"},
+                {"indicator": "IND-F0305-05", "function": "unreviewed"}
               ],
               "source_refs": [
                 "ASTM-F2656-2020",
@@ -31237,9 +31311,10 @@
                 "execution"
               ],
               "limitations": "Constrained by existing site geometry, emergency-access and delivery needs, and local right-of-way; reduces attainable speed rather than eliminating vehicle access entirely",
-              "compensates_for": [
-                "IND-F0305-02",
-                "IND-F0305-05"
+              "compensates_for": [],
+              "mitigates": [
+                {"indicator": "IND-F0305-02", "function": "unreviewed"},
+                {"indicator": "IND-F0305-05", "function": "unreviewed"}
               ],
               "source_refs": [
                 "CISA-HVM-2024",
@@ -31260,9 +31335,11 @@
               ],
               "limitations": "Hardening buys delay, not denial: a sufficiently equipped or numerous actor can defeat a single portal given time; effectiveness depends on guard vigilance and on lockdown being triggered before the breach completes",
               "compensates_for": [
-                "IND-F0305-03",
-                "IND-F0305-04",
                 "CM-0301-01"
+              ],
+              "mitigates": [
+                {"indicator": "IND-F0305-03", "function": "unreviewed"},
+                {"indicator": "IND-F0305-04", "function": "unreviewed"}
               ],
               "source_refs": [
                 "DOD-UFC4022-2017",
@@ -31281,9 +31358,10 @@
                 "execution"
               ],
               "limitations": "Warning time from detection to impact can be seconds for a ramming vehicle; value depends on pre-planned automatic responses (barrier activation, lockdown) since human decision cycles are too slow to interdict a committed approach",
-              "compensates_for": [
-                "IND-F0305-02",
-                "IND-F0305-05"
+              "compensates_for": [],
+              "mitigates": [
+                {"indicator": "IND-F0305-02", "function": "unreviewed"},
+                {"indicator": "IND-F0305-05", "function": "unreviewed"}
               ],
               "source_refs": [
                 "CISA-HVM-2024",
@@ -31753,9 +31831,11 @@
               ],
               "limitations": "Controlled ingress slows a seizure but cannot stop a large coordinated crowd at a public-facing lobby; balances against legitimate visitor and patron access",
               "compensates_for": [
-                "IND-F0306-01",
-                "IND-F0306-03",
                 "CM-0303-01"
+              ],
+              "mitigates": [
+                {"indicator": "IND-F0306-01", "function": "unreviewed"},
+                {"indicator": "IND-F0306-03", "function": "unreviewed"}
               ],
               "source_refs": [
                 "GULYASH-FIELD-OPS-2004-2026",
@@ -31775,8 +31855,10 @@
               ],
               "limitations": "Protects life-safety egress but does not by itself end the occupation; determined actors may still barricade primary entrances even where fire exits are held clear",
               "compensates_for": [
-                "IND-F0306-02",
                 "CM-0303-03"
+              ],
+              "mitigates": [
+                {"indicator": "IND-F0306-02", "function": "unreviewed"}
               ],
               "source_refs": [
                 "GULYASH-FIELD-OPS-2004-2026",
@@ -31796,8 +31878,9 @@
                 "aftermath"
               ],
               "limitations": "Effectiveness depends on law-enforcement response time and the group's willingness to negotiate; a fortified lock-on occupation can outlast an unrehearsed response",
-              "compensates_for": [
-                "IND-F0306-05"
+              "compensates_for": [],
+              "mitigates": [
+                {"indicator": "IND-F0306-05", "function": "unreviewed"}
               ],
               "source_refs": [
                 "GULYASH-FIELD-OPS-2004-2026",
@@ -31817,8 +31900,10 @@
               ],
               "limitations": "Provides early warning but not intervention; value depends on a staffed response that can act on the alert before the group reaches a holdable chokepoint",
               "compensates_for": [
-                "IND-F0306-03",
                 "CM-O0314-02"
+              ],
+              "mitigates": [
+                {"indicator": "IND-F0306-03", "function": "unreviewed"}
               ],
               "source_refs": [
                 "GULYASH-FIELD-OPS-2004-2026",
@@ -32796,8 +32881,10 @@
               ],
               "limitations": "Sensors cover known contaminants and sampling points; a novel agent or an injection downstream of the monitored point may reach occupants before detection, and alarms require a staffed response to be actionable",
               "compensates_for": [
-                "IND-F0308-01",
                 "CM-I0306-04"
+              ],
+              "mitigates": [
+                {"indicator": "IND-F0308-01", "function": "unreviewed"}
               ],
               "source_refs": [
                 "GULYASH-FIELD-OPS-2004-2026",
@@ -32818,8 +32905,10 @@
               ],
               "limitations": "Raises the effort to reach a delivery point but does not stop a credentialed insider or authorized contractor; roof and grounds intakes are difficult to fully enclose without impairing operation",
               "compensates_for": [
-                "IND-F0308-03",
                 "CM-I0306-02"
+              ],
+              "mitigates": [
+                {"indicator": "IND-F0308-03", "function": "unreviewed"}
               ],
               "source_refs": [
                 "GULYASH-FIELD-OPS-2004-2026",
@@ -32839,8 +32928,9 @@
                 "execution"
               ],
               "limitations": "Filtration and elevated intakes reduce but do not eliminate exposure; internal introduction downstream of filtration bypasses these controls, and rapid shutdown depends on early recognition of a release",
-              "compensates_for": [
-                "IND-F0308-02"
+              "compensates_for": [],
+              "mitigates": [
+                {"indicator": "IND-F0308-02", "function": "unreviewed"}
               ],
               "source_refs": [
                 "GULYASH-FIELD-OPS-2004-2026",
@@ -32861,8 +32951,9 @@
                 "aftermath"
               ],
               "limitations": "A plan governs response speed and coordination but cannot prevent introduction; effectiveness depends on early recognition of exposure and on staff and partners executing under uncertainty",
-              "compensates_for": [
-                "IND-F0308-05"
+              "compensates_for": [],
+              "mitigates": [
+                {"indicator": "IND-F0308-05", "function": "unreviewed"}
               ],
               "source_refs": [
                 "GULYASH-FIELD-OPS-2004-2026",
@@ -33327,8 +33418,9 @@
                 "execution"
               ],
               "limitations": "Life-safety codes require exits to remain openable from inside, but improvised external blocking (vehicles, chains, debris) can still trap occupants; monitoring detects tampering but does not physically prevent it",
-              "compensates_for": [
-                "IND-F0309-01"
+              "compensates_for": [],
+              "mitigates": [
+                {"indicator": "IND-F0309-01", "function": "unreviewed"}
               ],
               "source_refs": [
                 "GULYASH-FIELD-OPS-2004-2026",
@@ -33348,8 +33440,9 @@
                 "execution"
               ],
               "limitations": "Monitoring shortens the window between disablement and notice but does not restore the disabled function; an insider with legitimate system access may defeat supervision or mask the tamper as routine service",
-              "compensates_for": [
-                "IND-F0309-02"
+              "compensates_for": [],
+              "mitigates": [
+                {"indicator": "IND-F0309-02", "function": "unreviewed"}
               ],
               "source_refs": [
                 "GULYASH-FIELD-OPS-2004-2026",
@@ -33369,8 +33462,9 @@
                 "aftermath"
               ],
               "limitations": "A controlled, staged approach that protects responders can also lengthen time-to-aid for trapped occupants; effectiveness depends on realistic joint exercises and on responders actually recognizing a staged hazard under pressure",
-              "compensates_for": [
-                "IND-F0309-03"
+              "compensates_for": [],
+              "mitigates": [
+                {"indicator": "IND-F0309-03", "function": "unreviewed"}
               ],
               "source_refs": [
                 "GULYASH-FIELD-OPS-2004-2026",
@@ -33390,8 +33484,10 @@
               ],
               "limitations": "Redundant paths add cost and maintenance and can drift out of readiness if not exercised; a sufficiently broad jamming or infrastructure attack can degrade several paths at once, leaving only the manual fallback",
               "compensates_for": [
-                "IND-F0309-04",
                 "CM-I0305-03"
+              ],
+              "mitigates": [
+                {"indicator": "IND-F0309-04", "function": "unreviewed"}
               ],
               "source_refs": [
                 "GULYASH-FIELD-OPS-2004-2026",
@@ -34380,9 +34476,10 @@
                 "aftermath"
               ],
               "limitations": "Depends on responders arriving before the actor can act and on discipline under emergency conditions; life-safety overhaul and rescue legitimately disturb the scene and can be indistinguishable from destruction at the moment it occurs",
-              "compensates_for": [
-                "IND-F0402-01",
-                "IND-F0402-02"
+              "compensates_for": [],
+              "mitigates": [
+                {"indicator": "IND-F0402-01", "function": "unreviewed"},
+                {"indicator": "IND-F0402-02", "function": "unreviewed"}
               ],
               "source_refs": [
                 "GULYASH-FIELD-OPS-2004-2026"
@@ -34401,10 +34498,12 @@
               ],
               "limitations": "Coverage has blind spots and finite retention; a disciplined actor identifies gaps and disposes off-camera, and third-party footage may be overwritten before it is requested",
               "compensates_for": [
-                "IND-F0402-04",
-                "IND-F0402-05",
                 "CM-0402-04",
                 "CM-I0404-01"
+              ],
+              "mitigates": [
+                {"indicator": "IND-F0402-04", "function": "unreviewed"},
+                {"indicator": "IND-F0402-05", "function": "unreviewed"}
               ],
               "source_refs": [
                 "GULYASH-FIELD-OPS-2004-2026"
@@ -34423,8 +34522,10 @@
               ],
               "limitations": "Cannot fully bar personnel with legitimate recovery roles; an insider with a plausible reason to return may sanitize under cover of authorized activity, and enforcement competes with restoration pressure",
               "compensates_for": [
-                "IND-F0402-04",
                 "CM-I0404-02"
+              ],
+              "mitigates": [
+                {"indicator": "IND-F0402-04", "function": "unreviewed"}
               ],
               "source_refs": [
                 "GULYASH-FIELD-OPS-2004-2026",
@@ -34444,9 +34545,11 @@
               ],
               "limitations": "Waste and water disposal channels move and destroy material quickly; canvassing is resource-intensive and may not reach a distant or well-chosen dump site in time",
               "compensates_for": [
-                "IND-F0402-05",
-                "IND-F0402-03",
                 "CM-0402-01"
+              ],
+              "mitigates": [
+                {"indicator": "IND-F0402-05", "function": "unreviewed"},
+                {"indicator": "IND-F0402-03", "function": "unreviewed"}
               ],
               "source_refs": [
                 "GULYASH-FIELD-OPS-2004-2026",
@@ -34926,8 +35029,10 @@
               ],
               "limitations": "A rehearsed, well-backstopped alibi can survive verification; corroborating records may be incomplete or the person may have a legitimate reason to have been elsewhere",
               "compensates_for": [
-                "IND-F0403-02",
                 "CM-0403-02"
+              ],
+              "mitigates": [
+                {"indicator": "IND-F0403-02", "function": "unreviewed"}
               ],
               "source_refs": [
                 "GULYASH-FIELD-OPS-2004-2026",
@@ -34947,8 +35052,10 @@
               ],
               "limitations": "Effective only where credentials and vendor identities were tracked at issue; disposable or fully fabricated personas may never have entered the reconciliation system",
               "compensates_for": [
-                "IND-F0403-05",
                 "CM-0403-03"
+              ],
+              "mitigates": [
+                {"indicator": "IND-F0403-05", "function": "unreviewed"}
               ],
               "source_refs": [
                 "GULYASH-FIELD-OPS-2004-2026",
@@ -34967,8 +35074,9 @@
                 "aftermath"
               ],
               "limitations": "Requires a defensible investigative basis and legal authority; scrubbing may already be complete before a hold is in place, and closed or foreign-hosted platforms may not honor preservation requests",
-              "compensates_for": [
-                "IND-F0403-03"
+              "compensates_for": [],
+              "mitigates": [
+                {"indicator": "IND-F0403-03", "function": "unreviewed"}
               ],
               "source_refs": [
                 "GULYASH-FIELD-OPS-2004-2026",
@@ -35441,9 +35549,11 @@
               ],
               "limitations": "Ephemeral and encrypted platforms may leave little to preserve; holds reach only records within institutional or legal custody and cannot recover what a determined actor destroyed first",
               "compensates_for": [
-                "IND-F0404-01",
-                "IND-F0404-04",
                 "CM-0402-01"
+              ],
+              "mitigates": [
+                {"indicator": "IND-F0404-01", "function": "unreviewed"},
+                {"indicator": "IND-F0404-04", "function": "unreviewed"}
               ],
               "source_refs": [
                 "GULYASH-FIELD-OPS-2004-2026"
@@ -35462,8 +35572,10 @@
               ],
               "limitations": "Protection depends on identifying witnesses before the actor reaches them; trauma and fear can suppress cooperation even absent direct coercion, and resource limits constrain durable protection",
               "compensates_for": [
-                "IND-F0404-03",
                 "CM-0404-03"
+              ],
+              "mitigates": [
+                {"indicator": "IND-F0404-03", "function": "unreviewed"}
               ],
               "source_refs": [
                 "GULYASH-FIELD-OPS-2004-2026"
@@ -35482,9 +35594,11 @@
               ],
               "limitations": "Encrypted and closed channels are not visible; monitoring an identified network implicates privacy and surveillance law and requires a documented legal basis before activation",
               "compensates_for": [
-                "IND-F0404-02",
                 "CM-O0404-04",
                 "CM-O0405-03"
+              ],
+              "mitigates": [
+                {"indicator": "IND-F0404-02", "function": "unreviewed"}
               ],
               "source_refs": [
                 "GULYASH-FIELD-OPS-2004-2026"
@@ -35503,12 +35617,14 @@
               ],
               "limitations": "Coached insiders may present clean records; the review surfaces anomalies but cannot by itself prove intent, and depends on log integrity that the insider may have influenced",
               "compensates_for": [
-                "IND-F0404-05",
                 "CM-0402-02",
                 "CM-0404-01",
                 "CM-I0405-02",
                 "CM-O0404-03",
                 "CM-O0405-01"
+              ],
+              "mitigates": [
+                {"indicator": "IND-F0404-05", "function": "unreviewed"}
               ],
               "source_refs": [
                 "GULYASH-FIELD-OPS-2004-2026"
@@ -36519,8 +36635,9 @@
                 "aftermath"
               ],
               "limitations": "Remediation competes for resources during recovery and may lag the actor's own learning cycle; some structural gaps cannot be closed quickly",
-              "compensates_for": [
-                "IND-F0406-02"
+              "compensates_for": [],
+              "mitigates": [
+                {"indicator": "IND-F0406-02", "function": "unreviewed"}
               ],
               "source_refs": [
                 "GULYASH-FIELD-OPS-2004-2026"
@@ -36990,9 +37107,11 @@
               ],
               "limitations": "Specialized examiner capacity is limited and often external; high-intensity fire or collapse can destroy residue independent of any obfuscation, and negatives remain ambiguous without corroboration",
               "compensates_for": [
-                "IND-F0407-01",
-                "IND-F0407-02",
                 "CM-I0403-02"
+              ],
+              "mitigates": [
+                {"indicator": "IND-F0407-01", "function": "unreviewed"},
+                {"indicator": "IND-F0407-02", "function": "unreviewed"}
               ],
               "source_refs": [
                 "GULYASH-FIELD-OPS-2004-2026",
@@ -37013,9 +37132,11 @@
               ],
               "limitations": "Off-site logging preserves only what was already captured; gaps in coverage, short retention windows, and encrypted actor-owned devices outside the facility remain beyond reach",
               "compensates_for": [
-                "IND-F0407-03",
                 "CM-I0403-01",
                 "CM-O0404-02"
+              ],
+              "mitigates": [
+                {"indicator": "IND-F0407-03", "function": "unreviewed"}
               ],
               "source_refs": [
                 "GULYASH-FIELD-OPS-2004-2026",
@@ -37035,10 +37156,12 @@
               ],
               "limitations": "Cash purchases, common dual-use materials, and third-party or cut-out acquisition defeat record-matching; results require legal process and are retrospective",
               "compensates_for": [
-                "IND-F0407-02",
-                "IND-F0407-04",
                 "CM-I0403-04",
                 "CM-O0404-01"
+              ],
+              "mitigates": [
+                {"indicator": "IND-F0407-02", "function": "unreviewed"},
+                {"indicator": "IND-F0407-04", "function": "unreviewed"}
               ],
               "source_refs": [
                 "GULYASH-FIELD-OPS-2004-2026",
@@ -37057,9 +37180,10 @@
                 "aftermath"
               ],
               "limitations": "Recognition depends on responder experience and scene tempo; over-reading absence as obfuscation risks false positives against fire dynamics and routine cleaning, so it informs escalation rather than conclusion",
-              "compensates_for": [
-                "IND-F0407-01",
-                "IND-F0407-05"
+              "compensates_for": [],
+              "mitigates": [
+                {"indicator": "IND-F0407-01", "function": "unreviewed"},
+                {"indicator": "IND-F0407-05", "function": "unreviewed"}
               ],
               "source_refs": [
                 "GULYASH-FIELD-OPS-2004-2026",
@@ -37534,9 +37658,10 @@
                 "aftermath"
               ],
               "limitations": "Depends on responder discipline under pressure; a determined actor may conceal a device to survive a rushed sweep, and the doctrine slows life-saving response to reduce secondary exposure",
-              "compensates_for": [
-                "IND-F0408-01",
-                "IND-F0408-04"
+              "compensates_for": [],
+              "mitigates": [
+                {"indicator": "IND-F0408-01", "function": "unreviewed"},
+                {"indicator": "IND-F0408-04", "function": "unreviewed"}
               ],
               "source_refs": [
                 "GULYASH-FIELD-OPS-2004-2026",
@@ -37555,9 +37680,10 @@
                 "aftermath"
               ],
               "limitations": "Alternate sites must still be reachable and functional; published emergency plans and habitual practice can re-expose the defaults, and coordination overhead grows with the number of options",
-              "compensates_for": [
-                "IND-F0408-02",
-                "IND-F0408-04"
+              "compensates_for": [],
+              "mitigates": [
+                {"indicator": "IND-F0408-02", "function": "unreviewed"},
+                {"indicator": "IND-F0408-04", "function": "unreviewed"}
               ],
               "source_refs": [
                 "GULYASH-FIELD-OPS-2004-2026",
@@ -37576,9 +37702,10 @@
                 "aftermath"
               ],
               "limitations": "Requires trained observers and camera coverage of vantage points and approaches; a disciplined actor may blend with onlookers or press, and overwatch competes for resources during a mass-casualty response",
-              "compensates_for": [
-                "IND-F0408-02",
-                "IND-F0408-05"
+              "compensates_for": [],
+              "mitigates": [
+                {"indicator": "IND-F0408-02", "function": "unreviewed"},
+                {"indicator": "IND-F0408-05", "function": "unreviewed"}
               ],
               "source_refs": [
                 "GULYASH-FIELD-OPS-2004-2026",
@@ -37597,9 +37724,10 @@
                 "aftermath"
               ],
               "limitations": "EOD response and cordon enforcement take time and personnel; standoff distances conflict with the urgency of casualty care, and reoccupation delay carries its own operational cost",
-              "compensates_for": [
-                "IND-F0408-01",
-                "IND-F0408-04"
+              "compensates_for": [],
+              "mitigates": [
+                {"indicator": "IND-F0408-01", "function": "unreviewed"},
+                {"indicator": "IND-F0408-04", "function": "unreviewed"}
               ],
               "source_refs": [
                 "GULYASH-FIELD-OPS-2004-2026",
@@ -39092,8 +39220,9 @@
                 "aftermath"
               ],
               "limitations": "Cannot control independent media or platform amplification; over-suppression can itself become a story, and a counter-frame competes with a message often engineered for faster spread",
-              "compensates_for": [
-                "IND-F0411-04"
+              "compensates_for": [],
+              "mitigates": [
+                {"indicator": "IND-F0411-04", "function": "unreviewed"}
               ],
               "source_refs": [
                 "GULYASH-FIELD-OPS-2004-2026"
@@ -39112,8 +39241,9 @@
                 "mobilization"
               ],
               "limitations": "Reassurance cannot fully offset a message that has already reached the community; outreach requires pre-existing trust that may be absent, and elevated posture is resource-limited over time",
-              "compensates_for": [
-                "IND-F0411-03"
+              "compensates_for": [],
+              "mitigates": [
+                {"indicator": "IND-F0411-03", "function": "unreviewed"}
               ],
               "source_refs": [
                 "GULYASH-FIELD-OPS-2004-2026",
@@ -39596,9 +39726,10 @@
                 "aftermath"
               ],
               "limitations": "Preservation supports investigation but does not neutralize the threat; anonymized and encrypted channels may yield limited attribution even when captured cleanly",
-              "compensates_for": [
-                "IND-F0412-01",
-                "IND-F0412-04"
+              "compensates_for": [],
+              "mitigates": [
+                {"indicator": "IND-F0412-01", "function": "unreviewed"},
+                {"indicator": "IND-F0412-04", "function": "unreviewed"}
               ],
               "source_refs": [
                 "GULYASH-FIELD-OPS-2004-2026",
@@ -39618,8 +39749,10 @@
               ],
               "limitations": "Tracing depends on the actor using a traceable path; sophisticated laundering, mixers, or off-ramp discipline can defeat attribution and recovery",
               "compensates_for": [
-                "IND-F0412-04",
                 "CM-I0408-03"
+              ],
+              "mitigates": [
+                {"indicator": "IND-F0412-04", "function": "unreviewed"}
               ],
               "source_refs": [
                 "GULYASH-FIELD-OPS-2004-2026",
@@ -39639,8 +39772,10 @@
               ],
               "limitations": "Messaging discipline reduces the actor's psychological leverage but cannot address a genuine follow-on capability, which requires operational response",
               "compensates_for": [
-                "IND-F0412-05",
                 "CM-O0412-04"
+              ],
+              "mitigates": [
+                {"indicator": "IND-F0412-05", "function": "unreviewed"}
               ],
               "source_refs": [
                 "GULYASH-FIELD-OPS-2004-2026"
@@ -40083,9 +40218,10 @@
                 "target_development"
               ],
               "limitations": "Falls short where mission and public standing must remain visible for the institution to function.",
-              "compensates_for": [
-                "IND-O0101-01",
-                "IND-O0101-02"
+              "compensates_for": [],
+              "mitigates": [
+                {"indicator": "IND-O0101-01", "function": "unreviewed"},
+                {"indicator": "IND-O0101-02", "function": "unreviewed"}
               ],
               "source_refs": [
                 "GISF-SECURITYTOGO-2020",
@@ -40105,9 +40241,10 @@
                 "mobilization"
               ],
               "limitations": "Falls short against threat actors who select a target privately and leave no open-source trace.",
-              "compensates_for": [
-                "IND-O0101-03",
-                "IND-O0101-04"
+              "compensates_for": [],
+              "mitigates": [
+                {"indicator": "IND-O0101-03", "function": "unreviewed"},
+                {"indicator": "IND-O0101-04", "function": "unreviewed"}
               ],
               "source_refs": [
                 "MELOY-TRAP18-2016",
@@ -40126,9 +40263,10 @@
                 "target_development"
               ],
               "limitations": "Falls short when selection cues never surface in channels staff observe or handle.",
-              "compensates_for": [
-                "IND-O0101-04",
-                "IND-O0101-05"
+              "compensates_for": [],
+              "mitigates": [
+                {"indicator": "IND-O0101-04", "function": "unreviewed"},
+                {"indicator": "IND-O0101-05", "function": "unreviewed"}
               ],
               "source_refs": [
                 "NTAC-SYSTEMS-2020",
@@ -40148,9 +40286,10 @@
                 "mobilization"
               ],
               "limitations": "Falls short if staff do not report or if intake lacks analytic follow-through.",
-              "compensates_for": [
-                "IND-O0101-01",
-                "IND-O0101-05"
+              "compensates_for": [],
+              "mitigates": [
+                {"indicator": "IND-O0101-01", "function": "unreviewed"},
+                {"indicator": "IND-O0101-05", "function": "unreviewed"}
               ],
               "source_refs": [
                 "CALHOUN-WESTON-2003",
@@ -40612,9 +40751,10 @@
                 "target_development"
               ],
               "limitations": "Falls short where regulators or bylaws mandate disclosure of officers and governance.",
-              "compensates_for": [
-                "IND-O0102-01",
-                "IND-O0102-02"
+              "compensates_for": [],
+              "mitigates": [
+                {"indicator": "IND-O0102-01", "function": "unreviewed"},
+                {"indicator": "IND-O0102-02", "function": "unreviewed"}
               ],
               "source_refs": [
                 "GISF-SECURITYTOGO-2020",
@@ -40633,9 +40773,10 @@
                 "target_development"
               ],
               "limitations": "Falls short against reconnaissance built from public filings the institution cannot log.",
-              "compensates_for": [
-                "IND-O0102-03",
-                "IND-O0102-04"
+              "compensates_for": [],
+              "mitigates": [
+                {"indicator": "IND-O0102-03", "function": "unreviewed"},
+                {"indicator": "IND-O0102-04", "function": "unreviewed"}
               ],
               "source_refs": [
                 "CERT-CSG-7-2022",
@@ -40655,9 +40796,10 @@
                 "aftermath"
               ],
               "limitations": "Falls short if named successors share the same exposure the mapping identifies.",
-              "compensates_for": [
-                "IND-O0102-02",
-                "IND-O0102-05"
+              "compensates_for": [],
+              "mitigates": [
+                {"indicator": "IND-O0102-02", "function": "unreviewed"},
+                {"indicator": "IND-O0102-05", "function": "unreviewed"}
               ],
               "source_refs": [
                 "GISF-SECURITYTOGO-2020",
@@ -40676,9 +40818,10 @@
                 "target_development"
               ],
               "limitations": "Falls short when probing is indirect and never reaches the officers themselves.",
-              "compensates_for": [
-                "IND-O0102-01",
-                "IND-O0102-04"
+              "compensates_for": [],
+              "mitigates": [
+                {"indicator": "IND-O0102-01", "function": "unreviewed"},
+                {"indicator": "IND-O0102-04", "function": "unreviewed"}
               ],
               "source_refs": [
                 "NTAC-SYSTEMS-2020",
@@ -41138,9 +41281,10 @@
                 "mobilization"
               ],
               "limitations": "Falls short against reconnaissance conducted in closed channels the institution cannot observe.",
-              "compensates_for": [
-                "IND-O0103-01",
-                "IND-O0103-02"
+              "compensates_for": [],
+              "mitigates": [
+                {"indicator": "IND-O0103-01", "function": "unreviewed"},
+                {"indicator": "IND-O0103-02", "function": "unreviewed"}
               ],
               "source_refs": [
                 "CISA-DISINFO-TACTICS",
@@ -41159,9 +41303,10 @@
                 "target_development"
               ],
               "limitations": "Falls short where genuine unresolved controversy gives contested claims real material.",
-              "compensates_for": [
-                "IND-O0103-02",
-                "IND-O0103-03"
+              "compensates_for": [],
+              "mitigates": [
+                {"indicator": "IND-O0103-02", "function": "unreviewed"},
+                {"indicator": "IND-O0103-03", "function": "unreviewed"}
               ],
               "source_refs": [
                 "RAND-ELECTIONS-RRA704-2020",
@@ -41181,9 +41326,10 @@
                 "execution"
               ],
               "limitations": "Falls short if the underlying controversy is legitimate and unresolved.",
-              "compensates_for": [
-                "IND-O0103-03",
-                "IND-O0103-04"
+              "compensates_for": [],
+              "mitigates": [
+                {"indicator": "IND-O0103-03", "function": "unreviewed"},
+                {"indicator": "IND-O0103-04", "function": "unreviewed"}
               ],
               "source_refs": [
                 "CISA-DISINFO-TACTICS",
@@ -41202,9 +41348,10 @@
                 "target_development"
               ],
               "limitations": "Falls short when reconnaissance mimics ordinary press or public inquiry.",
-              "compensates_for": [
-                "IND-O0103-01",
-                "IND-O0103-05"
+              "compensates_for": [],
+              "mitigates": [
+                {"indicator": "IND-O0103-01", "function": "unreviewed"},
+                {"indicator": "IND-O0103-05", "function": "unreviewed"}
               ],
               "source_refs": [
                 "RAND-DISINFO-RR4373-2021",
@@ -41662,9 +41809,10 @@
                 "target_development"
               ],
               "limitations": "Falls short where a critical dependency has no viable alternative to diversify toward.",
-              "compensates_for": [
-                "IND-O0104-01",
-                "IND-O0104-02"
+              "compensates_for": [],
+              "mitigates": [
+                {"indicator": "IND-O0104-01", "function": "unreviewed"},
+                {"indicator": "IND-O0104-02", "function": "unreviewed"}
               ],
               "source_refs": [
                 "GISF-SECURITYTOGO-2020",
@@ -41683,9 +41831,10 @@
                 "target_development"
               ],
               "limitations": "Falls short where funding transparency or procurement rules mandate public disclosure.",
-              "compensates_for": [
-                "IND-O0104-02",
-                "IND-O0104-03"
+              "compensates_for": [],
+              "mitigates": [
+                {"indicator": "IND-O0104-02", "function": "unreviewed"},
+                {"indicator": "IND-O0104-03", "function": "unreviewed"}
               ],
               "source_refs": [
                 "GISF-SECURITYTOGO-2020",
@@ -41705,9 +41854,10 @@
                 "aftermath"
               ],
               "limitations": "Falls short when a partner chooses to exit for reputational reasons the institution cannot contract around.",
-              "compensates_for": [
-                "IND-O0104-03",
-                "IND-O0104-04"
+              "compensates_for": [],
+              "mitigates": [
+                {"indicator": "IND-O0104-03", "function": "unreviewed"},
+                {"indicator": "IND-O0104-04", "function": "unreviewed"}
               ],
               "source_refs": [
                 "GISF-SECURITYTOGO-2020",
@@ -41727,9 +41877,10 @@
                 "mobilization"
               ],
               "limitations": "Falls short when pressure reaches dependencies through private channels the institution never sees.",
-              "compensates_for": [
-                "IND-O0104-04",
-                "IND-O0104-05"
+              "compensates_for": [],
+              "mitigates": [
+                {"indicator": "IND-O0104-04", "function": "unreviewed"},
+                {"indicator": "IND-O0104-05", "function": "unreviewed"}
               ],
               "source_refs": [
                 "RAND-DISINFO-RR4373-2021",
@@ -42186,9 +42337,10 @@
                 "target_development"
               ],
               "limitations": "Falls short where fault lines reflect genuine unresolved disputes leadership will not address.",
-              "compensates_for": [
-                "IND-O0105-01",
-                "IND-O0105-02"
+              "compensates_for": [],
+              "mitigates": [
+                {"indicator": "IND-O0105-01", "function": "unreviewed"},
+                {"indicator": "IND-O0105-02", "function": "unreviewed"}
               ],
               "source_refs": [
                 "CERT-CSG-7-2022",
@@ -42208,9 +42360,10 @@
                 "execution"
               ],
               "limitations": "Falls short when division is stoked inside private member channels the institution cannot observe.",
-              "compensates_for": [
-                "IND-O0105-02",
-                "IND-O0105-03"
+              "compensates_for": [],
+              "mitigates": [
+                {"indicator": "IND-O0105-02", "function": "unreviewed"},
+                {"indicator": "IND-O0105-03", "function": "unreviewed"}
               ],
               "source_refs": [
                 "RAND-DISINFO-RR4373-2021",
@@ -42229,9 +42382,10 @@
                 "target_development"
               ],
               "limitations": "Falls short if members distrust the channels or leadership fails to act on what they surface.",
-              "compensates_for": [
-                "IND-O0105-03",
-                "IND-O0105-04"
+              "compensates_for": [],
+              "mitigates": [
+                {"indicator": "IND-O0105-03", "function": "unreviewed"},
+                {"indicator": "IND-O0105-04", "function": "unreviewed"}
               ],
               "source_refs": [
                 "CERT-CSG-7-2022",
@@ -42251,9 +42405,10 @@
                 "execution"
               ],
               "limitations": "Falls short when divisive content is indistinguishable from sincere internal debate.",
-              "compensates_for": [
-                "IND-O0105-04",
-                "IND-O0105-05"
+              "compensates_for": [],
+              "mitigates": [
+                {"indicator": "IND-O0105-04", "function": "unreviewed"},
+                {"indicator": "IND-O0105-05", "function": "unreviewed"}
               ],
               "source_refs": [
                 "CISA-DISINFO-TACTICS",
@@ -42703,9 +42858,10 @@
                 "mobilization"
               ],
               "limitations": "Falls short against affiliates and volunteers who fall outside the program's employee scope.",
-              "compensates_for": [
-                "IND-O0106-01",
-                "IND-O0106-02"
+              "compensates_for": [],
+              "mitigates": [
+                {"indicator": "IND-O0106-01", "function": "unreviewed"},
+                {"indicator": "IND-O0106-02", "function": "unreviewed"}
               ],
               "source_refs": [
                 "CERT-CSG-7-2022",
@@ -42725,9 +42881,10 @@
                 "execution"
               ],
               "limitations": "Falls short where roles legitimately require broad access that cannot be narrowed.",
-              "compensates_for": [
-                "IND-O0106-02",
-                "IND-O0106-03"
+              "compensates_for": [],
+              "mitigates": [
+                {"indicator": "IND-O0106-02", "function": "unreviewed"},
+                {"indicator": "IND-O0106-03", "function": "unreviewed"}
               ],
               "source_refs": [
                 "CERT-CSG-7-2022",
@@ -42746,9 +42903,10 @@
                 "target_development"
               ],
               "limitations": "Falls short when the individual conceals distress or declines to engage the resources.",
-              "compensates_for": [
-                "IND-O0106-03",
-                "IND-O0106-04"
+              "compensates_for": [],
+              "mitigates": [
+                {"indicator": "IND-O0106-03", "function": "unreviewed"},
+                {"indicator": "IND-O0106-04", "function": "unreviewed"}
               ],
               "source_refs": [
                 "CISA-DIT-2023",
@@ -42769,10 +42927,12 @@
               ],
               "limitations": "Falls short when the approach is subtle, external, and never disclosed by the targeted employee.",
               "compensates_for": [
-                "IND-O0106-04",
-                "IND-O0106-05",
                 "CM-F0107-01",
                 "CM-I0108-02"
+              ],
+              "mitigates": [
+                {"indicator": "IND-O0106-04", "function": "unreviewed"},
+                {"indicator": "IND-O0106-05", "function": "unreviewed"}
               ],
               "source_refs": [
                 "NITTF-GUIDE-2017",
@@ -43218,9 +43378,10 @@
                 "target_development"
               ],
               "limitations": "depends on staff adherence and does not cover data a threat actor collects from third parties or prior public disclosures",
-              "compensates_for": [
-                "IND-O0107-01",
-                "IND-O0107-03"
+              "compensates_for": [],
+              "mitigates": [
+                {"indicator": "IND-O0107-01", "function": "unreviewed"},
+                {"indicator": "IND-O0107-03", "function": "unreviewed"}
               ],
               "source_refs": [
                 "CERT-CSG-7-2022",
@@ -43239,9 +43400,10 @@
                 "target_development"
               ],
               "limitations": "generates false positives from legitimate research and cannot see reconnaissance conducted entirely against cached or mirrored copies",
-              "compensates_for": [
-                "IND-O0107-02",
-                "IND-O0107-04"
+              "compensates_for": [],
+              "mitigates": [
+                {"indicator": "IND-O0107-02", "function": "unreviewed"},
+                {"indicator": "IND-O0107-04", "function": "unreviewed"}
               ],
               "source_refs": [
                 "NITTF-GUIDE-2017"
@@ -43259,9 +43421,10 @@
                 "target_development"
               ],
               "limitations": "provides a point-in-time snapshot only and requires repeated cycles to stay current as new information is published",
-              "compensates_for": [
-                "IND-O0107-01",
-                "IND-O0107-05"
+              "compensates_for": [],
+              "mitigates": [
+                {"indicator": "IND-O0107-01", "function": "unreviewed"},
+                {"indicator": "IND-O0107-05", "function": "unreviewed"}
               ],
               "source_refs": [
                 "CISA-DIT-2023",
@@ -43280,8 +43443,9 @@
                 "target_development"
               ],
               "limitations": "effectiveness decays without refresher training and does not stop passive collection that never contacts a person",
-              "compensates_for": [
-                "IND-O0107-04"
+              "compensates_for": [],
+              "mitigates": [
+                {"indicator": "IND-O0107-04", "function": "unreviewed"}
               ],
               "source_refs": [
                 "NTAC-SYSTEMS-2020"
@@ -43743,9 +43907,10 @@
                 "target_development"
               ],
               "limitations": "adds handling time and cannot distinguish a determined threat actor who supplies fabricated but plausible credentials",
-              "compensates_for": [
-                "IND-O0108-01",
-                "IND-O0108-02"
+              "compensates_for": [],
+              "mitigates": [
+                {"indicator": "IND-O0108-01", "function": "unreviewed"},
+                {"indicator": "IND-O0108-02", "function": "unreviewed"}
               ],
               "source_refs": [
                 "GISF-SECURITYTOGO-2020"
@@ -43764,9 +43929,11 @@
               ],
               "limitations": "requires channels to feed a common system and misses probing conducted through channels that are not instrumented",
               "compensates_for": [
-                "IND-O0108-03",
-                "IND-O0108-05",
                 "CM-F0108-03"
+              ],
+              "mitigates": [
+                {"indicator": "IND-O0108-03", "function": "unreviewed"},
+                {"indicator": "IND-O0108-05", "function": "unreviewed"}
               ],
               "source_refs": [
                 "NTAC-SYSTEMS-2020"
@@ -43784,9 +43951,10 @@
                 "target_development"
               ],
               "limitations": "depends on staff turnover and attentiveness and does not cover automated or after-hours probing",
-              "compensates_for": [
-                "IND-O0108-01",
-                "IND-O0108-04"
+              "compensates_for": [],
+              "mitigates": [
+                {"indicator": "IND-O0108-01", "function": "unreviewed"},
+                {"indicator": "IND-O0108-04", "function": "unreviewed"}
               ],
               "source_refs": [
                 "FBI-PREATTACK-2018"
@@ -43804,8 +43972,9 @@
                 "target_development"
               ],
               "limitations": "uniformity can slow legitimate service and does not prevent probing that observes physical or timing behavior",
-              "compensates_for": [
-                "IND-O0108-04"
+              "compensates_for": [],
+              "mitigates": [
+                {"indicator": "IND-O0108-04", "function": "unreviewed"}
               ],
               "source_refs": [
                 "GULYASH-FIELD-OPS-2004-2026"
@@ -44242,9 +44411,10 @@
                 "target_development"
               ],
               "limitations": "depends on reporting culture and cannot act on pathway behavior that no one observes or reports",
-              "compensates_for": [
-                "IND-O0109-01",
-                "IND-O0109-02"
+              "compensates_for": [],
+              "mitigates": [
+                {"indicator": "IND-O0109-01", "function": "unreviewed"},
+                {"indicator": "IND-O0109-02", "function": "unreviewed"}
               ],
               "source_refs": [
                 "NTAC-SYSTEMS-2020",
@@ -44264,9 +44434,11 @@
               ],
               "limitations": "reporting quality varies and the channel captures only behavior that is externally visible",
               "compensates_for": [
-                "IND-O0109-01",
-                "IND-O0109-03",
                 "CM-0107-03"
+              ],
+              "mitigates": [
+                {"indicator": "IND-O0109-01", "function": "unreviewed"},
+                {"indicator": "IND-O0109-03", "function": "unreviewed"}
               ],
               "source_refs": [
                 "FBI-PREATTACK-2018",
@@ -44286,9 +44458,11 @@
               ],
               "limitations": "requires trained assessors and reliable information and does not predict timing of an act with certainty",
               "compensates_for": [
-                "IND-O0109-04",
-                "IND-O0109-05",
                 "CM-I0110-02"
+              ],
+              "mitigates": [
+                {"indicator": "IND-O0109-04", "function": "unreviewed"},
+                {"indicator": "IND-O0109-05", "function": "unreviewed"}
               ],
               "source_refs": [
                 "MELOY-TRAP18-2016",
@@ -44308,9 +44482,11 @@
               ],
               "limitations": "requires the subject to be reachable and cooperative and does not fit a fully committed external threat actor",
               "compensates_for": [
-                "IND-O0109-02",
-                "IND-O0109-04",
                 "CM-F0109-04"
+              ],
+              "mitigates": [
+                {"indicator": "IND-O0109-02", "function": "unreviewed"},
+                {"indicator": "IND-O0109-04", "function": "unreviewed"}
               ],
               "source_refs": [
                 "NTAC-SYSTEMS-2020"
@@ -44741,9 +44917,10 @@
                 "mobilization"
               ],
               "limitations": "requires a stable baseline and tuning, and low-volume rehearsals can hide within normal variance",
-              "compensates_for": [
-                "IND-O0201-01",
-                "IND-O0201-03"
+              "compensates_for": [],
+              "mitigates": [
+                {"indicator": "IND-O0201-01", "function": "unreviewed"},
+                {"indicator": "IND-O0201-03", "function": "unreviewed"}
               ],
               "source_refs": [
                 "NITTF-GUIDE-2017"
@@ -44761,9 +44938,10 @@
                 "mobilization"
               ],
               "limitations": "thresholds can block legitimate spikes and a patient threat actor can pace rehearsals below limits",
-              "compensates_for": [
-                "IND-O0201-02",
-                "IND-O0201-04"
+              "compensates_for": [],
+              "mitigates": [
+                {"indicator": "IND-O0201-02", "function": "unreviewed"},
+                {"indicator": "IND-O0201-04", "function": "unreviewed"}
               ],
               "source_refs": [
                 "CISA-DISINFO-TACTICS"
@@ -44781,8 +44959,9 @@
                 "mobilization"
               ],
               "limitations": "drills improve readiness but do not by themselves detect a rehearsal in progress",
-              "compensates_for": [
-                "IND-O0201-05"
+              "compensates_for": [],
+              "mitigates": [
+                {"indicator": "IND-O0201-05", "function": "unreviewed"}
               ],
               "source_refs": [
                 "GISF-SECURITYTOGO-2020"
@@ -44801,9 +44980,11 @@
               ],
               "limitations": "only fires when the threat actor touches the planted asset and requires maintenance to stay credible",
               "compensates_for": [
-                "IND-O0201-01",
-                "IND-O0201-04",
                 "CM-0209-01"
+              ],
+              "mitigates": [
+                {"indicator": "IND-O0201-01", "function": "unreviewed"},
+                {"indicator": "IND-O0201-04", "function": "unreviewed"}
               ],
               "source_refs": [
                 "CERT-CSG-7-2022"
@@ -45246,9 +45427,10 @@
                 "mobilization"
               ],
               "limitations": "constrains but does not eliminate insider value and can be undermined by privilege creep over time",
-              "compensates_for": [
-                "IND-O0202-03",
-                "IND-O0202-04"
+              "compensates_for": [],
+              "mitigates": [
+                {"indicator": "IND-O0202-03", "function": "unreviewed"},
+                {"indicator": "IND-O0202-04", "function": "unreviewed"}
               ],
               "source_refs": [
                 "CERT-CSG-7-2022",
@@ -45268,12 +45450,14 @@
               ],
               "limitations": "raises privacy and morale concerns and produces false positives requiring careful, governed adjudication",
               "compensates_for": [
-                "IND-O0202-01",
-                "IND-O0202-05",
                 "CM-0101-05",
                 "CM-0105-01",
                 "CM-F0107-01",
                 "CM-I0108-04"
+              ],
+              "mitigates": [
+                {"indicator": "IND-O0202-01", "function": "unreviewed"},
+                {"indicator": "IND-O0202-05", "function": "unreviewed"}
               ],
               "source_refs": [
                 "CISA-CONVERGE-2021",
@@ -45292,9 +45476,10 @@
                 "mobilization"
               ],
               "limitations": "a coerced or willing insider may not self-report and awareness decays without reinforcement",
-              "compensates_for": [
-                "IND-O0202-01",
-                "IND-O0202-02"
+              "compensates_for": [],
+              "mitigates": [
+                {"indicator": "IND-O0202-01", "function": "unreviewed"},
+                {"indicator": "IND-O0202-02", "function": "unreviewed"}
               ],
               "source_refs": [
                 "CISA-DIT-2023"
@@ -45313,9 +45498,11 @@
               ],
               "limitations": "resource intensive and captures only disclosable or discoverable information at the time of review",
               "compensates_for": [
-                "IND-O0202-04",
-                "IND-O0202-05",
                 "CM-F0107-03"
+              ],
+              "mitigates": [
+                {"indicator": "IND-O0202-04", "function": "unreviewed"},
+                {"indicator": "IND-O0202-05", "function": "unreviewed"}
               ],
               "source_refs": [
                 "NITTF-GUIDE-2017"
@@ -45750,9 +45937,10 @@
                 "mobilization"
               ],
               "limitations": "a well-constructed front with layered documentation can pass initial vetting and requires ongoing revalidation",
-              "compensates_for": [
-                "IND-O0203-01",
-                "IND-O0203-03"
+              "compensates_for": [],
+              "mitigates": [
+                {"indicator": "IND-O0203-01", "function": "unreviewed"},
+                {"indicator": "IND-O0203-03", "function": "unreviewed"}
               ],
               "source_refs": [
                 "RAND-DISINFO-RR4373-2021",
@@ -45771,9 +45959,10 @@
                 "mobilization"
               ],
               "limitations": "coverage is incomplete across platforms and a front that avoids brand mimicry evades this detection",
-              "compensates_for": [
-                "IND-O0203-02",
-                "IND-O0203-04"
+              "compensates_for": [],
+              "mitigates": [
+                {"indicator": "IND-O0203-02", "function": "unreviewed"},
+                {"indicator": "IND-O0203-04", "function": "unreviewed"}
               ],
               "source_refs": [
                 "CISA-DISINFO-TACTICS"
@@ -45791,9 +45980,10 @@
                 "mobilization"
               ],
               "limitations": "only helps parties who check the registry and does not reach audiences the front reaches directly",
-              "compensates_for": [
-                "IND-O0203-02",
-                "IND-O0203-05"
+              "compensates_for": [],
+              "mitigates": [
+                {"indicator": "IND-O0203-02", "function": "unreviewed"},
+                {"indicator": "IND-O0203-05", "function": "unreviewed"}
               ],
               "source_refs": [
                 "RAND-ELECTIONS-RRA704-2020"
@@ -45811,9 +46001,10 @@
                 "target_development"
               ],
               "limitations": "opaque jurisdictions and nominee arrangements can hide true ownership from reasonable diligence",
-              "compensates_for": [
-                "IND-O0203-01",
-                "IND-O0203-03"
+              "compensates_for": [],
+              "mitigates": [
+                {"indicator": "IND-O0203-01", "function": "unreviewed"},
+                {"indicator": "IND-O0203-03", "function": "unreviewed"}
               ],
               "source_refs": [
                 "CHAINALYSIS-CCR-2024",
@@ -46267,9 +46458,10 @@
                 "mobilization"
               ],
               "limitations": "surfaces public staging only and misses closed channels or encrypted coordination",
-              "compensates_for": [
-                "IND-O0204-01",
-                "IND-O0204-02"
+              "compensates_for": [],
+              "mitigates": [
+                {"indicator": "IND-O0204-01", "function": "unreviewed"},
+                {"indicator": "IND-O0204-02", "function": "unreviewed"}
               ],
               "source_refs": [
                 "CISA-DISINFO-TACTICS"
@@ -46287,8 +46479,9 @@
                 "mobilization"
               ],
               "limitations": "effective only if the registry is published and audiences trust the source of truth",
-              "compensates_for": [
-                "IND-O0204-03"
+              "compensates_for": [],
+              "mitigates": [
+                {"indicator": "IND-O0204-03", "function": "unreviewed"}
               ],
               "source_refs": [
                 "RAND-DISINFO-RR4373-2021"
@@ -46306,8 +46499,9 @@
                 "mobilization"
               ],
               "limitations": "templates age quickly and require periodic refresh against emerging narratives",
-              "compensates_for": [
-                "IND-O0204-04"
+              "compensates_for": [],
+              "mitigates": [
+                {"indicator": "IND-O0204-04", "function": "unreviewed"}
               ],
               "source_refs": [
                 "CISA-DISINFO-TACTICS",
@@ -46326,9 +46520,10 @@
                 "mobilization"
               ],
               "limitations": "attribution stays probabilistic and sophisticated actors mimic organic behavior",
-              "compensates_for": [
-                "IND-O0204-05",
-                "IND-O0204-01"
+              "compensates_for": [],
+              "mitigates": [
+                {"indicator": "IND-O0204-05", "function": "unreviewed"},
+                {"indicator": "IND-O0204-01", "function": "unreviewed"}
               ],
               "source_refs": [
                 "RAND-DISINFO-RR4373-2021"
@@ -46786,9 +46981,10 @@
                 "mobilization"
               ],
               "limitations": "cannot detect a clean-record actor who carries no prior derogatory indicators",
-              "compensates_for": [
-                "IND-O0205-01",
-                "IND-O0205-02"
+              "compensates_for": [],
+              "mitigates": [
+                {"indicator": "IND-O0205-01", "function": "unreviewed"},
+                {"indicator": "IND-O0205-02", "function": "unreviewed"}
               ],
               "source_refs": [
                 "CERT-CSG-7-2022"
@@ -46807,8 +47003,10 @@
               ],
               "limitations": "relies on the quality of watchlists and shell identities evade matching",
               "compensates_for": [
-                "IND-O0205-03",
                 "CM-0106-01"
+              ],
+              "mitigates": [
+                {"indicator": "IND-O0205-03", "function": "unreviewed"}
               ],
               "source_refs": [
                 "CISA-DIT-2023"
@@ -46827,8 +47025,10 @@
               ],
               "limitations": "slows legitimate onboarding and can be bypassed by an internal sponsor who is complicit",
               "compensates_for": [
-                "IND-O0205-04",
                 "CM-F0108-02"
+              ],
+              "mitigates": [
+                {"indicator": "IND-O0205-04", "function": "unreviewed"}
               ],
               "source_refs": [
                 "NITTF-GUIDE-2017"
@@ -46847,8 +47047,10 @@
               ],
               "limitations": "depends on reporting culture and subtle actors avoid early tells",
               "compensates_for": [
-                "IND-O0205-05",
                 "CM-F0108-04"
+              ],
+              "mitigates": [
+                {"indicator": "IND-O0205-05", "function": "unreviewed"}
               ],
               "source_refs": [
                 "NTAC-SYSTEMS-2020"
@@ -47298,9 +47500,10 @@
                 "mobilization"
               ],
               "limitations": "insiders holding legitimate roles remain able to abuse the authority they are granted",
-              "compensates_for": [
-                "IND-O0206-01",
-                "IND-O0206-02"
+              "compensates_for": [],
+              "mitigates": [
+                {"indicator": "IND-O0206-01", "function": "unreviewed"},
+                {"indicator": "IND-O0206-02", "function": "unreviewed"}
               ],
               "source_refs": [
                 "CERT-CSG-7-2022"
@@ -47318,8 +47521,9 @@
                 "mobilization"
               ],
               "limitations": "colluding actors defeat separation and the controls add procedural overhead",
-              "compensates_for": [
-                "IND-O0206-03"
+              "compensates_for": [],
+              "mitigates": [
+                {"indicator": "IND-O0206-03", "function": "unreviewed"}
               ],
               "source_refs": [
                 "CERT-CSG-7-2022"
@@ -47337,8 +47541,9 @@
                 "mobilization"
               ],
               "limitations": "generates noise and requires disciplined review to catch slow accumulation",
-              "compensates_for": [
-                "IND-O0206-04"
+              "compensates_for": [],
+              "mitigates": [
+                {"indicator": "IND-O0206-04", "function": "unreviewed"}
               ],
               "source_refs": [
                 "NITTF-GUIDE-2017"
@@ -47356,8 +47561,9 @@
                 "mobilization"
               ],
               "limitations": "point-in-time review can miss authority acquired and used between cycles",
-              "compensates_for": [
-                "IND-O0206-05"
+              "compensates_for": [],
+              "mitigates": [
+                {"indicator": "IND-O0206-05", "function": "unreviewed"}
               ],
               "source_refs": [
                 "CISA-DIT-2023"
@@ -47806,8 +48012,9 @@
                 "mobilization"
               ],
               "limitations": "does not stop an authorized insider from exfiltrating within their own access",
-              "compensates_for": [
-                "IND-O0207-01"
+              "compensates_for": [],
+              "mitigates": [
+                {"indicator": "IND-O0207-01", "function": "unreviewed"}
               ],
               "source_refs": [
                 "CERT-CSG-7-2022"
@@ -47825,9 +48032,10 @@
                 "mobilization"
               ],
               "limitations": "sophisticated actors stage slowly or move material through out-of-band channels",
-              "compensates_for": [
-                "IND-O0207-02",
-                "IND-O0207-03"
+              "compensates_for": [],
+              "mitigates": [
+                {"indicator": "IND-O0207-02", "function": "unreviewed"},
+                {"indicator": "IND-O0207-03", "function": "unreviewed"}
               ],
               "source_refs": [
                 "NITTF-GUIDE-2017"
@@ -47845,8 +48053,9 @@
                 "mobilization"
               ],
               "limitations": "operational needs limit how much can be purged and historical records may persist elsewhere",
-              "compensates_for": [
-                "IND-O0207-04"
+              "compensates_for": [],
+              "mitigates": [
+                {"indicator": "IND-O0207-04", "function": "unreviewed"}
               ],
               "source_refs": [
                 "CISA-DIT-2023"
@@ -47864,8 +48073,9 @@
                 "mobilization"
               ],
               "limitations": "targets may stay silent from shame or fear and the channel requires demonstrated non-retaliation",
-              "compensates_for": [
-                "IND-O0207-05"
+              "compensates_for": [],
+              "mitigates": [
+                {"indicator": "IND-O0207-05", "function": "unreviewed"}
               ],
               "source_refs": [
                 "CALHOUN-WESTON-2003"
@@ -48323,9 +48533,10 @@
                 "mobilization"
               ],
               "limitations": "off-platform and privacy-coin financing evades monitoring",
-              "compensates_for": [
-                "IND-O0208-01",
-                "IND-O0208-02"
+              "compensates_for": [],
+              "mitigates": [
+                {"indicator": "IND-O0208-01", "function": "unreviewed"},
+                {"indicator": "IND-O0208-02", "function": "unreviewed"}
               ],
               "source_refs": [
                 "CHAINALYSIS-CCR-2024"
@@ -48343,8 +48554,9 @@
                 "mobilization"
               ],
               "limitations": "infrastructure signals are ambiguous and easily attributed to benign activity",
-              "compensates_for": [
-                "IND-O0208-03"
+              "compensates_for": [],
+              "mitigates": [
+                {"indicator": "IND-O0208-03", "function": "unreviewed"}
               ],
               "source_refs": [
                 "START-GTD-2020"
@@ -48362,8 +48574,9 @@
                 "mobilization"
               ],
               "limitations": "reserve building competes with mission spending and a well-resourced threat actor can still outlast the institution",
-              "compensates_for": [
-                "IND-O0208-04"
+              "compensates_for": [],
+              "mitigates": [
+                {"indicator": "IND-O0208-04", "function": "unreviewed"}
               ],
               "source_refs": [
                 "GISF-SECURITYTOGO-2020"
@@ -48381,8 +48594,9 @@
                 "mobilization"
               ],
               "limitations": "referrals depend on processor and agency responsiveness and actors migrate to new rails",
-              "compensates_for": [
-                "IND-O0208-05"
+              "compensates_for": [],
+              "mitigates": [
+                {"indicator": "IND-O0208-05", "function": "unreviewed"}
               ],
               "source_refs": [
                 "CHAINALYSIS-CCR-2024"
@@ -48826,9 +49040,10 @@
                 "mobilization"
               ],
               "limitations": "network analysis struggles to separate coordinated fronts from organic allies",
-              "compensates_for": [
-                "IND-O0209-01",
-                "IND-O0209-02"
+              "compensates_for": [],
+              "mitigates": [
+                {"indicator": "IND-O0209-01", "function": "unreviewed"},
+                {"indicator": "IND-O0209-02", "function": "unreviewed"}
               ],
               "source_refs": [
                 "RAND-DISINFO-RR4373-2021"
@@ -48846,8 +49061,9 @@
                 "mobilization"
               ],
               "limitations": "well-resourced actors build distinct fronts that resist correlation",
-              "compensates_for": [
-                "IND-O0209-03"
+              "compensates_for": [],
+              "mitigates": [
+                {"indicator": "IND-O0209-03", "function": "unreviewed"}
               ],
               "source_refs": [
                 "RAND-ELECTIONS-RRA704-2020"
@@ -48865,8 +49081,9 @@
                 "mobilization"
               ],
               "limitations": "relationship capital takes time to build and can erode under sustained pressure",
-              "compensates_for": [
-                "IND-O0209-04"
+              "compensates_for": [],
+              "mitigates": [
+                {"indicator": "IND-O0209-04", "function": "unreviewed"}
               ],
               "source_refs": [
                 "GISF-SECURITYTOGO-2020"
@@ -48884,8 +49101,9 @@
                 "mobilization"
               ],
               "limitations": "exposure can appear defensive and sophisticated fronts leave little provable linkage",
-              "compensates_for": [
-                "IND-O0209-05"
+              "compensates_for": [],
+              "mitigates": [
+                {"indicator": "IND-O0209-05", "function": "unreviewed"}
               ],
               "source_refs": [
                 "CISA-DISINFO-TACTICS"
@@ -49328,8 +49546,10 @@
               ],
               "limitations": "depends on staff reporting probing behavior they may not recognize as hostile",
               "compensates_for": [
-                "IND-O0210-01",
                 "CM-0202-03"
+              ],
+              "mitigates": [
+                {"indicator": "IND-O0210-01", "function": "unreviewed"}
               ],
               "source_refs": [
                 "NITTF-GUIDE-2017"
@@ -49348,11 +49568,13 @@
               ],
               "limitations": "a sophisticated threat actor may operate below alerting thresholds",
               "compensates_for": [
-                "IND-O0210-02",
-                "IND-O0210-03",
                 "CM-0108-03",
                 "CM-F0105-01",
                 "CM-F0202-03"
+              ],
+              "mitigates": [
+                {"indicator": "IND-O0210-02", "function": "unreviewed"},
+                {"indicator": "IND-O0210-03", "function": "unreviewed"}
               ],
               "source_refs": [
                 "CERT-CSG-7-2022"
@@ -49370,8 +49592,9 @@
                 "mobilization"
               ],
               "limitations": "over-compartmentation can slow legitimate cross-team coordination",
-              "compensates_for": [
-                "IND-O0210-04"
+              "compensates_for": [],
+              "mitigates": [
+                {"indicator": "IND-O0210-04", "function": "unreviewed"}
               ],
               "source_refs": [
                 "NITTF-GUIDE-2017"
@@ -49389,8 +49612,9 @@
                 "mobilization"
               ],
               "limitations": "exercises capture only tested vectors and require skilled threat actor emulation",
-              "compensates_for": [
-                "IND-O0210-05"
+              "compensates_for": [],
+              "mitigates": [
+                {"indicator": "IND-O0210-05", "function": "unreviewed"}
               ],
               "source_refs": [
                 "GULYASH-FIELD-OPS-2004-2026"
@@ -49825,8 +50049,9 @@
                 "mobilization"
               ],
               "limitations": "fourth-party and subcontractor risk often remains invisible to the institution",
-              "compensates_for": [
-                "IND-O0211-01"
+              "compensates_for": [],
+              "mitigates": [
+                {"indicator": "IND-O0211-01", "function": "unreviewed"}
               ],
               "source_refs": [
                 "CERT-CSG-7-2022"
@@ -49844,8 +50069,9 @@
                 "mobilization"
               ],
               "limitations": "contractual controls lag behind live compromise and depend on partner honesty",
-              "compensates_for": [
-                "IND-O0211-02"
+              "compensates_for": [],
+              "mitigates": [
+                {"indicator": "IND-O0211-02", "function": "unreviewed"}
               ],
               "source_refs": [
                 "CISA-CONVERGE-2021"
@@ -49864,9 +50090,11 @@
               ],
               "limitations": "high alert volume and dependence on partner telemetry that the institution does not control",
               "compensates_for": [
-                "IND-O0211-03",
-                "IND-O0211-04",
                 "CM-I0109-02"
+              ],
+              "mitigates": [
+                {"indicator": "IND-O0211-03", "function": "unreviewed"},
+                {"indicator": "IND-O0211-04", "function": "unreviewed"}
               ],
               "source_refs": [
                 "CISA-CONVERGE-2021"
@@ -49884,8 +50112,9 @@
                 "execution"
               ],
               "limitations": "independent verification is slow and may not exist for niche accreditors",
-              "compensates_for": [
-                "IND-O0211-05"
+              "compensates_for": [],
+              "mitigates": [
+                {"indicator": "IND-O0211-05", "function": "unreviewed"}
               ],
               "source_refs": [
                 "GISF-SECURITYTOGO-2020"
@@ -50280,9 +50509,10 @@
                 "mobilization"
               ],
               "limitations": "These windows are exactly when staff and budget are stretched, so compensating vigilance is hardest to sustain when it is most needed.",
-              "compensates_for": [
-                "IND-O0212-01",
-                "IND-O0212-02"
+              "compensates_for": [],
+              "mitigates": [
+                {"indicator": "IND-O0212-01", "function": "unreviewed"},
+                {"indicator": "IND-O0212-02", "function": "unreviewed"}
               ],
               "source_refs": [
                 "GULYASH-FIELD-OPS-2004-2026",
@@ -50303,9 +50533,10 @@
                 "execution"
               ],
               "limitations": "Ordinary market and press activity also clusters around these dates, so separating deliberate pressure from noise takes judgment.",
-              "compensates_for": [
-                "IND-O0212-03",
-                "IND-O0212-04"
+              "compensates_for": [],
+              "mitigates": [
+                {"indicator": "IND-O0212-03", "function": "unreviewed"},
+                {"indicator": "IND-O0212-04", "function": "unreviewed"}
               ],
               "source_refs": [
                 "GULYASH-FIELD-OPS-2004-2026",
@@ -50710,8 +50941,9 @@
                 "execution"
               ],
               "limitations": "rigid policy can conflict with genuine safety-of-life or ransomware realities",
-              "compensates_for": [
-                "IND-O0301-01"
+              "compensates_for": [],
+              "mitigates": [
+                {"indicator": "IND-O0301-01", "function": "unreviewed"}
               ],
               "source_refs": [
                 "CALHOUN-WESTON-2003"
@@ -50729,8 +50961,9 @@
                 "execution"
               ],
               "limitations": "plans decay without exercise and named-role updates",
-              "compensates_for": [
-                "IND-O0301-02"
+              "compensates_for": [],
+              "mitigates": [
+                {"indicator": "IND-O0301-02", "function": "unreviewed"}
               ],
               "source_refs": [
                 "NTAC-SYSTEMS-2020"
@@ -50748,9 +50981,10 @@
                 "execution"
               ],
               "limitations": "extortion often arrives through unmonitored personal or offline channels",
-              "compensates_for": [
-                "IND-O0301-03",
-                "IND-O0301-04"
+              "compensates_for": [],
+              "mitigates": [
+                {"indicator": "IND-O0301-03", "function": "unreviewed"},
+                {"indicator": "IND-O0301-04", "function": "unreviewed"}
               ],
               "source_refs": [
                 "CHAINALYSIS-CCR-2024"
@@ -50769,8 +51003,10 @@
               ],
               "limitations": "resilience investment cannot cover every reputational or membership pressure point",
               "compensates_for": [
-                "IND-O0301-05",
                 "CM-I0408-02"
+              ],
+              "mitigates": [
+                {"indicator": "IND-O0301-05", "function": "unreviewed"}
               ],
               "source_refs": [
                 "GISF-SECURITYTOGO-2020"
@@ -51220,8 +51456,9 @@
                 "execution"
               ],
               "limitations": "distinguishing organized delegitimization from legitimate criticism is difficult",
-              "compensates_for": [
-                "IND-O0302-01"
+              "compensates_for": [],
+              "mitigates": [
+                {"indicator": "IND-O0302-01", "function": "unreviewed"}
               ],
               "source_refs": [
                 "CISA-DISINFO-TACTICS"
@@ -51239,8 +51476,9 @@
                 "execution"
               ],
               "limitations": "transparency alone does not persuade audiences already captured by the campaign",
-              "compensates_for": [
-                "IND-O0302-02"
+              "compensates_for": [],
+              "mitigates": [
+                {"indicator": "IND-O0302-02", "function": "unreviewed"}
               ],
               "source_refs": [
                 "RAND-ELECTIONS-RRA704-2020"
@@ -51258,8 +51496,9 @@
                 "execution"
               ],
               "limitations": "reactive messaging can amplify a fringe narrative if misjudged",
-              "compensates_for": [
-                "IND-O0302-03"
+              "compensates_for": [],
+              "mitigates": [
+                {"indicator": "IND-O0302-03", "function": "unreviewed"}
               ],
               "source_refs": [
                 "CISA-DISINFO-TACTICS"
@@ -51277,9 +51516,10 @@
                 "execution"
               ],
               "limitations": "third-party validators may stay silent to avoid controversy",
-              "compensates_for": [
-                "IND-O0302-04",
-                "IND-O0302-05"
+              "compensates_for": [],
+              "mitigates": [
+                {"indicator": "IND-O0302-04", "function": "unreviewed"},
+                {"indicator": "IND-O0302-05", "function": "unreviewed"}
               ],
               "source_refs": [
                 "RAND-DISINFO-RR4373-2021"
@@ -51726,8 +51966,9 @@
                 "execution"
               ],
               "limitations": "sentiment signals lag and can miss private-channel erosion of confidence",
-              "compensates_for": [
-                "IND-O0303-01"
+              "compensates_for": [],
+              "mitigates": [
+                {"indicator": "IND-O0303-01", "function": "unreviewed"}
               ],
               "source_refs": [
                 "CISA-DISINFO-TACTICS"
@@ -51745,8 +51986,9 @@
                 "execution"
               ],
               "limitations": "reach is limited if trust is already damaged before the institution engages",
-              "compensates_for": [
-                "IND-O0303-02"
+              "compensates_for": [],
+              "mitigates": [
+                {"indicator": "IND-O0303-02", "function": "unreviewed"}
               ],
               "source_refs": [
                 "GISF-SECURITYTOGO-2020"
@@ -51764,9 +52006,10 @@
                 "execution"
               ],
               "limitations": "rebuttals rarely reach the full audience exposed to the original claim",
-              "compensates_for": [
-                "IND-O0303-03",
-                "IND-O0303-04"
+              "compensates_for": [],
+              "mitigates": [
+                {"indicator": "IND-O0303-03", "function": "unreviewed"},
+                {"indicator": "IND-O0303-04", "function": "unreviewed"}
               ],
               "source_refs": [
                 "RAND-DISINFO-RR4373-2021"
@@ -51784,8 +52027,9 @@
                 "execution"
               ],
               "limitations": "transparency does not neutralize purely fabricated allegations",
-              "compensates_for": [
-                "IND-O0303-05"
+              "compensates_for": [],
+              "mitigates": [
+                {"indicator": "IND-O0303-05", "function": "unreviewed"}
               ],
               "source_refs": [
                 "NITTF-GUIDE-2017"
@@ -52241,8 +52485,10 @@
               ],
               "limitations": "risk of false positives and privacy and labor constraints on monitoring",
               "compensates_for": [
-                "IND-O0304-01",
                 "CM-I0208-02"
+              ],
+              "mitigates": [
+                {"indicator": "IND-O0304-01", "function": "unreviewed"}
               ],
               "source_refs": [
                 "CERT-CSG-7-2022"
@@ -52260,8 +52506,9 @@
                 "execution"
               ],
               "limitations": "privileged administrators retain concentrated capability",
-              "compensates_for": [
-                "IND-O0304-02"
+              "compensates_for": [],
+              "mitigates": [
+                {"indicator": "IND-O0304-02", "function": "unreviewed"}
               ],
               "source_refs": [
                 "CISA-DIT-2023"
@@ -52280,9 +52527,11 @@
               ],
               "limitations": "a skilled insider can operate within authorized bounds to evade detection",
               "compensates_for": [
-                "IND-O0304-03",
-                "IND-O0304-04",
                 "CM-0105-01"
+              ],
+              "mitigates": [
+                {"indicator": "IND-O0304-03", "function": "unreviewed"},
+                {"indicator": "IND-O0304-04", "function": "unreviewed"}
               ],
               "source_refs": [
                 "CERT-CSG-7-2022"
@@ -52300,8 +52549,9 @@
                 "mobilization"
               ],
               "limitations": "relies on coworker willingness to report and on effective follow-through",
-              "compensates_for": [
-                "IND-O0304-05"
+              "compensates_for": [],
+              "mitigates": [
+                {"indicator": "IND-O0304-05", "function": "unreviewed"}
               ],
               "source_refs": [
                 "NITTF-GUIDE-2017"
@@ -52755,9 +53005,10 @@
                 "target_development"
               ],
               "limitations": "Bylaws deter procedural capture but cannot stop lawful coordinated voting by a genuine majority.",
-              "compensates_for": [
-                "IND-O0305-01",
-                "IND-O0305-02"
+              "compensates_for": [],
+              "mitigates": [
+                {"indicator": "IND-O0305-01", "function": "unreviewed"},
+                {"indicator": "IND-O0305-02", "function": "unreviewed"}
               ],
               "source_refs": [
                 "GISF-SECURITYTOGO-2020"
@@ -52775,9 +53026,10 @@
                 "target_development"
               ],
               "limitations": "Vetting surfaces known ties but a patient threat actor can build a clean record before mobilizing.",
-              "compensates_for": [
-                "IND-O0305-02",
-                "IND-O0305-03"
+              "compensates_for": [],
+              "mitigates": [
+                {"indicator": "IND-O0305-02", "function": "unreviewed"},
+                {"indicator": "IND-O0305-03", "function": "unreviewed"}
               ],
               "source_refs": [
                 "NITTF-GUIDE-2017"
@@ -52795,9 +53047,10 @@
                 "mobilization"
               ],
               "limitations": "Detection reveals coordination patterns but distinguishing legitimate reform from capture requires human judgment.",
-              "compensates_for": [
-                "IND-O0305-03",
-                "IND-O0305-04"
+              "compensates_for": [],
+              "mitigates": [
+                {"indicator": "IND-O0305-03", "function": "unreviewed"},
+                {"indicator": "IND-O0305-04", "function": "unreviewed"}
               ],
               "source_refs": [
                 "CALHOUN-WESTON-2003"
@@ -52815,9 +53068,10 @@
                 "execution"
               ],
               "limitations": "Supermajority thresholds slow capture but a determined bloc can grind toward the threshold over successive cycles.",
-              "compensates_for": [
-                "IND-O0305-04",
-                "IND-O0305-05"
+              "compensates_for": [],
+              "mitigates": [
+                {"indicator": "IND-O0305-04", "function": "unreviewed"},
+                {"indicator": "IND-O0305-05", "function": "unreviewed"}
               ],
               "source_refs": [
                 "GISF-SECURITYTOGO-2020"
@@ -53253,9 +53507,10 @@
                 "target_development"
               ],
               "limitations": "Surveys capture stated sentiment but miss members already committed to leaving quietly.",
-              "compensates_for": [
-                "IND-O0306-01",
-                "IND-O0306-02"
+              "compensates_for": [],
+              "mitigates": [
+                {"indicator": "IND-O0306-01", "function": "unreviewed"},
+                {"indicator": "IND-O0306-02", "function": "unreviewed"}
               ],
               "source_refs": [
                 "GISF-SECURITYTOGO-2020"
@@ -53273,9 +53528,10 @@
                 "mobilization"
               ],
               "limitations": "Engagement investment reduces susceptibility but cannot hold members whose grievances are genuine and unaddressed.",
-              "compensates_for": [
-                "IND-O0306-02",
-                "IND-O0306-03"
+              "compensates_for": [],
+              "mitigates": [
+                {"indicator": "IND-O0306-02", "function": "unreviewed"},
+                {"indicator": "IND-O0306-03", "function": "unreviewed"}
               ],
               "source_refs": [
                 "GISF-SECURITYTOGO-2020"
@@ -53293,9 +53549,10 @@
                 "mobilization"
               ],
               "limitations": "Detection identifies clustering but a decentralized whisper campaign leaves little observable signal.",
-              "compensates_for": [
-                "IND-O0306-03",
-                "IND-O0306-04"
+              "compensates_for": [],
+              "mitigates": [
+                {"indicator": "IND-O0306-03", "function": "unreviewed"},
+                {"indicator": "IND-O0306-04", "function": "unreviewed"}
               ],
               "source_refs": [
                 "RAND-DISINFO-RR4373-2021"
@@ -53313,9 +53570,10 @@
                 "execution"
               ],
               "limitations": "Continuity planning preserves function but cannot replace deep relationships and tacit knowledge that walk out with defectors.",
-              "compensates_for": [
-                "IND-O0306-04",
-                "IND-O0306-05"
+              "compensates_for": [],
+              "mitigates": [
+                {"indicator": "IND-O0306-04", "function": "unreviewed"},
+                {"indicator": "IND-O0306-05", "function": "unreviewed"}
               ],
               "source_refs": [
                 "NITTF-GUIDE-2017"
@@ -53742,9 +54000,10 @@
                 "target_development"
               ],
               "limitations": "Diversification reduces dependency but small institutions may lack the capacity to build many revenue streams.",
-              "compensates_for": [
-                "IND-O0307-01",
-                "IND-O0307-02"
+              "compensates_for": [],
+              "mitigates": [
+                {"indicator": "IND-O0307-01", "function": "unreviewed"},
+                {"indicator": "IND-O0307-02", "function": "unreviewed"}
               ],
               "source_refs": [
                 "GISF-SECURITYTOGO-2020"
@@ -53762,9 +54021,10 @@
                 "execution"
               ],
               "limitations": "Backup accounts blunt a single de-banking but a coordinated reputational pressure wave can reach multiple providers.",
-              "compensates_for": [
-                "IND-O0307-02",
-                "IND-O0307-03"
+              "compensates_for": [],
+              "mitigates": [
+                {"indicator": "IND-O0307-02", "function": "unreviewed"},
+                {"indicator": "IND-O0307-03", "function": "unreviewed"}
               ],
               "source_refs": [
                 "CHAINALYSIS-CCR-2024"
@@ -53782,9 +54042,10 @@
                 "mobilization"
               ],
               "limitations": "Monitoring flags public pressure but private banker risk decisions often surface only when the account is already frozen.",
-              "compensates_for": [
-                "IND-O0307-03",
-                "IND-O0307-04"
+              "compensates_for": [],
+              "mitigates": [
+                {"indicator": "IND-O0307-03", "function": "unreviewed"},
+                {"indicator": "IND-O0307-04", "function": "unreviewed"}
               ],
               "source_refs": [
                 "RAND-ELECTIONS-RRA704-2020"
@@ -53802,9 +54063,10 @@
                 "target_development"
               ],
               "limitations": "Clean records rebut false claims but do not stop a provider that exits purely to avoid reputational risk.",
-              "compensates_for": [
-                "IND-O0307-04",
-                "IND-O0307-05"
+              "compensates_for": [],
+              "mitigates": [
+                {"indicator": "IND-O0307-04", "function": "unreviewed"},
+                {"indicator": "IND-O0307-05", "function": "unreviewed"}
               ],
               "source_refs": [
                 "DUNLAP-LAWFARE-2001"
@@ -54244,9 +54506,10 @@
                 "target_development"
               ],
               "limitations": "Tiering limits reach but privileged insiders retain the access needed to exfiltrate the most sensitive records.",
-              "compensates_for": [
-                "IND-O0308-01",
-                "IND-O0308-02"
+              "compensates_for": [],
+              "mitigates": [
+                {"indicator": "IND-O0308-01", "function": "unreviewed"},
+                {"indicator": "IND-O0308-02", "function": "unreviewed"}
               ],
               "source_refs": [
                 "CERT-CSG-7-2022"
@@ -54264,9 +54527,10 @@
                 "mobilization"
               ],
               "limitations": "Monitoring catches digital exfiltration but not records photographed, memorized, or carried out on paper.",
-              "compensates_for": [
-                "IND-O0308-02",
-                "IND-O0308-03"
+              "compensates_for": [],
+              "mitigates": [
+                {"indicator": "IND-O0308-02", "function": "unreviewed"},
+                {"indicator": "IND-O0308-03", "function": "unreviewed"}
               ],
               "source_refs": [
                 "CISA-CONVERGE-2021"
@@ -54284,9 +54548,10 @@
                 "target_development"
               ],
               "limitations": "Agreements deter and enable recourse but do not physically prevent a committed threat actor from leaking.",
-              "compensates_for": [
-                "IND-O0308-03",
-                "IND-O0308-04"
+              "compensates_for": [],
+              "mitigates": [
+                {"indicator": "IND-O0308-03", "function": "unreviewed"},
+                {"indicator": "IND-O0308-04", "function": "unreviewed"}
               ],
               "source_refs": [
                 "NITTF-GUIDE-2017"
@@ -54304,9 +54569,10 @@
                 "aftermath"
               ],
               "limitations": "A playbook speeds response but cannot fully undo damage once sensitive material is public.",
-              "compensates_for": [
-                "IND-O0308-04",
-                "IND-O0308-05"
+              "compensates_for": [],
+              "mitigates": [
+                {"indicator": "IND-O0308-04", "function": "unreviewed"},
+                {"indicator": "IND-O0308-05", "function": "unreviewed"}
               ],
               "source_refs": [
                 "CISA-DISINFO-TACTICS"
@@ -54753,9 +55019,10 @@
                 "target_development"
               ],
               "limitations": "Shared norms build cohesion but cannot resolve genuine value disagreements a threat actor exploits.",
-              "compensates_for": [
-                "IND-O0309-01",
-                "IND-O0309-02"
+              "compensates_for": [],
+              "mitigates": [
+                {"indicator": "IND-O0309-01", "function": "unreviewed"},
+                {"indicator": "IND-O0309-02", "function": "unreviewed"}
               ],
               "source_refs": [
                 "GISF-SECURITYTOGO-2020"
@@ -54773,9 +55040,10 @@
                 "mobilization"
               ],
               "limitations": "Mediation defuses many disputes but fails when a threat actor's aim is division rather than resolution.",
-              "compensates_for": [
-                "IND-O0309-02",
-                "IND-O0309-03"
+              "compensates_for": [],
+              "mitigates": [
+                {"indicator": "IND-O0309-02", "function": "unreviewed"},
+                {"indicator": "IND-O0309-03", "function": "unreviewed"}
               ],
               "source_refs": [
                 "GISF-SECURITYTOGO-2020"
@@ -54793,9 +55061,10 @@
                 "mobilization"
               ],
               "limitations": "Monitoring detects overt narratives but private organizing and encrypted channels stay hidden.",
-              "compensates_for": [
-                "IND-O0309-03",
-                "IND-O0309-04"
+              "compensates_for": [],
+              "mitigates": [
+                {"indicator": "IND-O0309-03", "function": "unreviewed"},
+                {"indicator": "IND-O0309-04", "function": "unreviewed"}
               ],
               "source_refs": [
                 "RAND-DISINFO-RR4373-2021"
@@ -54813,9 +55082,10 @@
                 "execution"
               ],
               "limitations": "Awareness raises resistance but cannot inoculate members whose grievances the narrative genuinely validates.",
-              "compensates_for": [
-                "IND-O0309-04",
-                "IND-O0309-05"
+              "compensates_for": [],
+              "mitigates": [
+                {"indicator": "IND-O0309-04", "function": "unreviewed"},
+                {"indicator": "IND-O0309-05", "function": "unreviewed"}
               ],
               "source_refs": [
                 "CISA-DISINFO-TACTICS"
@@ -55243,9 +55513,10 @@
                 "target_development"
               ],
               "limitations": "Friction slows bulk flooding but also burdens legitimate applicants and does not stop distributed human-driven floods.",
-              "compensates_for": [
-                "IND-O0310-01",
-                "IND-O0310-02"
+              "compensates_for": [],
+              "mitigates": [
+                {"indicator": "IND-O0310-01", "function": "unreviewed"},
+                {"indicator": "IND-O0310-02", "function": "unreviewed"}
               ],
               "source_refs": [
                 "GISF-SECURITYTOGO-2020"
@@ -55263,9 +55534,10 @@
                 "mobilization"
               ],
               "limitations": "Anomaly alerts flag volume spikes but cannot instantly separate coordinated fakes from a real surge in demand.",
-              "compensates_for": [
-                "IND-O0310-02",
-                "IND-O0310-03"
+              "compensates_for": [],
+              "mitigates": [
+                {"indicator": "IND-O0310-02", "function": "unreviewed"},
+                {"indicator": "IND-O0310-03", "function": "unreviewed"}
               ],
               "source_refs": [
                 "RAND-DISINFO-RR4373-2021"
@@ -55283,9 +55555,10 @@
                 "execution"
               ],
               "limitations": "Triage preserves throughput but sustained high-volume floods still degrade service and exhaust staff.",
-              "compensates_for": [
-                "IND-O0310-03",
-                "IND-O0310-04"
+              "compensates_for": [],
+              "mitigates": [
+                {"indicator": "IND-O0310-03", "function": "unreviewed"},
+                {"indicator": "IND-O0310-04", "function": "unreviewed"}
               ],
               "source_refs": [
                 "GISF-SECURITYTOGO-2020"
@@ -55303,9 +55576,10 @@
                 "execution"
               ],
               "limitations": "Surge capacity buys time but is costly to sustain and a determined threat actor can outlast it.",
-              "compensates_for": [
-                "IND-O0310-04",
-                "IND-O0310-05"
+              "compensates_for": [],
+              "mitigates": [
+                {"indicator": "IND-O0310-04", "function": "unreviewed"},
+                {"indicator": "IND-O0310-05", "function": "unreviewed"}
               ],
               "source_refs": [
                 "GISF-SECURITYTOGO-2020"
@@ -55731,9 +56005,10 @@
                 "target_development"
               ],
               "limitations": "a determined threat actor can still file in venues where anti-SLAPP and fee-shifting protections are weak or unavailable",
-              "compensates_for": [
-                "IND-O0311-01",
-                "IND-O0311-02"
+              "compensates_for": [],
+              "mitigates": [
+                {"indicator": "IND-O0311-01", "function": "unreviewed"},
+                {"indicator": "IND-O0311-02", "function": "unreviewed"}
               ],
               "source_refs": [
                 "DUNLAP-LAWFARE-2001",
@@ -55752,9 +56027,10 @@
                 "mobilization"
               ],
               "limitations": "monitoring surfaces filings after they land and cannot reach sealed matters or complaints lodged through undisclosed proxies",
-              "compensates_for": [
-                "IND-O0311-02",
-                "IND-O0311-03"
+              "compensates_for": [],
+              "mitigates": [
+                {"indicator": "IND-O0311-02", "function": "unreviewed"},
+                {"indicator": "IND-O0311-03", "function": "unreviewed"}
               ],
               "source_refs": [
                 "GISF-SECURITYTOGO-2020"
@@ -55772,8 +56048,9 @@
                 "execution"
               ],
               "limitations": "deterrence assumes the threat actor is cost-sensitive and does not apply to a sponsor willing to fund attrition regardless of losses",
-              "compensates_for": [
-                "IND-O0311-04"
+              "compensates_for": [],
+              "mitigates": [
+                {"indicator": "IND-O0311-04", "function": "unreviewed"}
               ],
               "source_refs": [
                 "DUNLAP-LAWFARE-2001"
@@ -55791,8 +56068,9 @@
                 "execution"
               ],
               "limitations": "reserves and consolidation blunt cost but cannot prevent the leadership distraction and reputational drag that sustained litigation produces",
-              "compensates_for": [
-                "IND-O0311-05"
+              "compensates_for": [],
+              "mitigates": [
+                {"indicator": "IND-O0311-05", "function": "unreviewed"}
               ],
               "source_refs": [
                 "GISF-SECURITYTOGO-2020",
@@ -56226,9 +56504,10 @@
                 "target_development"
               ],
               "limitations": "structural defenses require shareholder or member approval and can be challenged or overridden by a court or a sufficiently large voting bloc",
-              "compensates_for": [
-                "IND-O0312-01",
-                "IND-O0312-02"
+              "compensates_for": [],
+              "mitigates": [
+                {"indicator": "IND-O0312-01", "function": "unreviewed"},
+                {"indicator": "IND-O0312-02", "function": "unreviewed"}
               ],
               "source_refs": [
                 "GISF-SECURITYTOGO-2020"
@@ -56246,9 +56525,10 @@
                 "mobilization"
               ],
               "limitations": "nominee accounts, layered vehicles, and derivative positions can mask the true accumulator until disclosure is legally compelled",
-              "compensates_for": [
-                "IND-O0312-02",
-                "IND-O0312-03"
+              "compensates_for": [],
+              "mitigates": [
+                {"indicator": "IND-O0312-02", "function": "unreviewed"},
+                {"indicator": "IND-O0312-03", "function": "unreviewed"}
               ],
               "source_refs": [
                 "CHAINALYSIS-CCR-2024",
@@ -56267,8 +56547,9 @@
                 "execution"
               ],
               "limitations": "reducing creditor leverage depends on market access and healthy cash flow that a coordinated pressure campaign may already be eroding",
-              "compensates_for": [
-                "IND-O0312-04"
+              "compensates_for": [],
+              "mitigates": [
+                {"indicator": "IND-O0312-04", "function": "unreviewed"}
               ],
               "source_refs": [
                 "GISF-SECURITYTOGO-2020"
@@ -56286,8 +56567,9 @@
                 "execution"
               ],
               "limitations": "readiness does not change the underlying vote math if a threat actor already commands enough committed shares or member support",
-              "compensates_for": [
-                "IND-O0312-05"
+              "compensates_for": [],
+              "mitigates": [
+                {"indicator": "IND-O0312-05", "function": "unreviewed"}
               ],
               "source_refs": [
                 "GULYASH-FIELD-OPS-2004-2026"
@@ -56717,9 +56999,10 @@
                 "target_development"
               ],
               "limitations": "authentication helps only stakeholders who know to check it and does not stop spoofing on channels outside the institution's control",
-              "compensates_for": [
-                "IND-O0313-01",
-                "IND-O0313-02"
+              "compensates_for": [],
+              "mitigates": [
+                {"indicator": "IND-O0313-01", "function": "unreviewed"},
+                {"indicator": "IND-O0313-02", "function": "unreviewed"}
               ],
               "source_refs": [
                 "CISA-DISINFO-TACTICS"
@@ -56737,9 +57020,10 @@
                 "mobilization"
               ],
               "limitations": "takedown latency lets a spoofed channel operate before removal and a threat actor can register replacement infrastructure faster than it is disabled",
-              "compensates_for": [
-                "IND-O0313-02",
-                "IND-O0313-03"
+              "compensates_for": [],
+              "mitigates": [
+                {"indicator": "IND-O0313-02", "function": "unreviewed"},
+                {"indicator": "IND-O0313-03", "function": "unreviewed"}
               ],
               "source_refs": [
                 "RAND-DISINFO-RR4373-2021",
@@ -56758,8 +57042,9 @@
                 "target_development"
               ],
               "limitations": "defensive registration cannot cover every permutation and offers no protection against outright forgery of documents or letterhead",
-              "compensates_for": [
-                "IND-O0313-04"
+              "compensates_for": [],
+              "mitigates": [
+                {"indicator": "IND-O0313-04", "function": "unreviewed"}
               ],
               "source_refs": [
                 "GULYASH-FIELD-OPS-2004-2026"
@@ -56777,8 +57062,9 @@
                 "execution"
               ],
               "limitations": "awareness decays over time and a well-crafted forgery can still deceive stakeholders under time pressure or emotional manipulation",
-              "compensates_for": [
-                "IND-O0313-05"
+              "compensates_for": [],
+              "mitigates": [
+                {"indicator": "IND-O0313-05", "function": "unreviewed"}
               ],
               "source_refs": [
                 "CISA-DISINFO-TACTICS"
@@ -57219,9 +57505,10 @@
                 "target_development"
               ],
               "limitations": "diversification takes time to build and cannot fully insulate an institution whose model depends on a concentrated market or sponsor base",
-              "compensates_for": [
-                "IND-O0314-01",
-                "IND-O0314-02"
+              "compensates_for": [],
+              "mitigates": [
+                {"indicator": "IND-O0314-01", "function": "unreviewed"},
+                {"indicator": "IND-O0314-02", "function": "unreviewed"}
               ],
               "source_refs": [
                 "GISF-SECURITYTOGO-2020"
@@ -57239,9 +57526,10 @@
                 "mobilization"
               ],
               "limitations": "sentiment tools struggle to separate authentic public opinion from seeded campaigns, risking both missed threats and overreaction to organic criticism",
-              "compensates_for": [
-                "IND-O0314-02",
-                "IND-O0314-03"
+              "compensates_for": [],
+              "mitigates": [
+                {"indicator": "IND-O0314-02", "function": "unreviewed"},
+                {"indicator": "IND-O0314-03", "function": "unreviewed"}
               ],
               "source_refs": [
                 "RAND-DISINFO-RR4373-2021",
@@ -57260,8 +57548,9 @@
                 "execution"
               ],
               "limitations": "partner loyalty erodes when public pressure becomes intense and relationship management cannot overcome a partner's own reputational calculus",
-              "compensates_for": [
-                "IND-O0314-04"
+              "compensates_for": [],
+              "mitigates": [
+                {"indicator": "IND-O0314-04", "function": "unreviewed"}
               ],
               "source_refs": [
                 "GISF-SECURITYTOGO-2020"
@@ -57279,8 +57568,9 @@
                 "execution"
               ],
               "limitations": "messaging cannot reverse a coercion campaign that rests on a legitimate underlying grievance the institution has not addressed",
-              "compensates_for": [
-                "IND-O0314-05"
+              "compensates_for": [],
+              "mitigates": [
+                {"indicator": "IND-O0314-05", "function": "unreviewed"}
               ],
               "source_refs": [
                 "RAND-ELECTIONS-RRA704-2020"
@@ -57697,9 +57987,10 @@
                 "target_development"
               ],
               "limitations": "some gatekeeper functions such as accreditation or charity status have no substitute, leaving the institution exposed regardless of redundancy",
-              "compensates_for": [
-                "IND-O0315-01",
-                "IND-O0315-02"
+              "compensates_for": [],
+              "mitigates": [
+                {"indicator": "IND-O0315-01", "function": "unreviewed"},
+                {"indicator": "IND-O0315-02", "function": "unreviewed"}
               ],
               "source_refs": [
                 "GISF-SECURITYTOGO-2020"
@@ -57717,9 +58008,10 @@
                 "mobilization"
               ],
               "limitations": "compliance records do not protect against a gatekeeper that removes the institution on policy grounds or under external pressure regardless of merit",
-              "compensates_for": [
-                "IND-O0315-02",
-                "IND-O0315-03"
+              "compensates_for": [],
+              "mitigates": [
+                {"indicator": "IND-O0315-02", "function": "unreviewed"},
+                {"indicator": "IND-O0315-03", "function": "unreviewed"}
               ],
               "source_refs": [
                 "GULYASH-FIELD-OPS-2004-2026"
@@ -57737,8 +58029,9 @@
                 "execution"
               ],
               "limitations": "pre-established contacts do not guarantee a favorable appeal when the gatekeeper faces greater pressure from the coercing party",
-              "compensates_for": [
-                "IND-O0315-04"
+              "compensates_for": [],
+              "mitigates": [
+                {"indicator": "IND-O0315-04", "function": "unreviewed"}
               ],
               "source_refs": [
                 "GISF-SECURITYTOGO-2020"
@@ -57756,8 +58049,9 @@
                 "mobilization"
               ],
               "limitations": "the institution often cannot see complaints filed privately with a gatekeeper until action is already underway",
-              "compensates_for": [
-                "IND-O0315-05"
+              "compensates_for": [],
+              "mitigates": [
+                {"indicator": "IND-O0315-05", "function": "unreviewed"}
               ],
               "source_refs": [
                 "RAND-DISINFO-RR4373-2021"
@@ -58188,9 +58482,10 @@
                 "execution"
               ],
               "limitations": "the institution can only preserve what it already observes and cannot capture front-entity records held privately or offshore",
-              "compensates_for": [
-                "IND-O0401-01",
-                "IND-O0401-02"
+              "compensates_for": [],
+              "mitigates": [
+                {"indicator": "IND-O0401-01", "function": "unreviewed"},
+                {"indicator": "IND-O0401-02", "function": "unreviewed"}
               ],
               "source_refs": [
                 "GULYASH-FIELD-OPS-2004-2026"
@@ -58208,9 +58503,10 @@
                 "aftermath"
               ],
               "limitations": "registry monitoring lags real dissolution and cannot follow assets or actors that migrate to newly formed successor vehicles",
-              "compensates_for": [
-                "IND-O0401-02",
-                "IND-O0401-03"
+              "compensates_for": [],
+              "mitigates": [
+                {"indicator": "IND-O0401-02", "function": "unreviewed"},
+                {"indicator": "IND-O0401-03", "function": "unreviewed"}
               ],
               "source_refs": [
                 "CHAINALYSIS-CCR-2024"
@@ -58228,8 +58524,9 @@
                 "aftermath"
               ],
               "limitations": "sophisticated layering through nominees and multiple jurisdictions can defeat linkage without compelled disclosure or law-enforcement subpoena power",
-              "compensates_for": [
-                "IND-O0401-04"
+              "compensates_for": [],
+              "mitigates": [
+                {"indicator": "IND-O0401-04", "function": "unreviewed"}
               ],
               "source_refs": [
                 "CHAINALYSIS-CCR-2024",
@@ -58248,8 +58545,9 @@
                 "aftermath"
               ],
               "limitations": "referral success depends on agency prioritization and jurisdiction, and dissolution may complete before any investigative authority acts",
-              "compensates_for": [
-                "IND-O0401-05"
+              "compensates_for": [],
+              "mitigates": [
+                {"indicator": "IND-O0401-05", "function": "unreviewed"}
               ],
               "source_refs": [
                 "GULYASH-FIELD-OPS-2004-2026"
@@ -58666,9 +58964,10 @@
                 "aftermath"
               ],
               "limitations": "only useful where authoritative baseline telemetry exists before the incident",
-              "compensates_for": [
-                "IND-O0402-01",
-                "IND-O0402-03"
+              "compensates_for": [],
+              "mitigates": [
+                {"indicator": "IND-O0402-01", "function": "unreviewed"},
+                {"indicator": "IND-O0402-03", "function": "unreviewed"}
               ],
               "source_refs": [
                 "NITTF-GUIDE-2017",
@@ -58687,9 +58986,10 @@
                 "aftermath"
               ],
               "limitations": "requires analysts with tradecraft depth and access to comparative campaign data",
-              "compensates_for": [
-                "IND-O0402-02",
-                "IND-O0402-04"
+              "compensates_for": [],
+              "mitigates": [
+                {"indicator": "IND-O0402-02", "function": "unreviewed"},
+                {"indicator": "IND-O0402-04", "function": "unreviewed"}
               ],
               "source_refs": [
                 "CALHOUN-WESTON-2003"
@@ -58708,9 +59008,10 @@
                 "aftermath"
               ],
               "limitations": "offshore or informal cutouts may fall outside contractual reach",
-              "compensates_for": [
-                "IND-O0402-03",
-                "IND-O0402-05"
+              "compensates_for": [],
+              "mitigates": [
+                {"indicator": "IND-O0402-03", "function": "unreviewed"},
+                {"indicator": "IND-O0402-05", "function": "unreviewed"}
               ],
               "source_refs": [
                 "CISA-DISINFO-TACTICS",
@@ -58729,9 +59030,10 @@
                 "aftermath"
               ],
               "limitations": "does not by itself resolve genuinely ambiguous evidence",
-              "compensates_for": [
-                "IND-O0402-01",
-                "IND-O0402-04"
+              "compensates_for": [],
+              "mitigates": [
+                {"indicator": "IND-O0402-01", "function": "unreviewed"},
+                {"indicator": "IND-O0402-04", "function": "unreviewed"}
               ],
               "source_refs": [
                 "NTAC-SYSTEMS-2020"
@@ -59165,9 +59467,10 @@
                 "aftermath"
               ],
               "limitations": "sophisticated laundering through genuine intermediaries can evade pattern detection",
-              "compensates_for": [
-                "IND-O0403-01",
-                "IND-O0403-02"
+              "compensates_for": [],
+              "mitigates": [
+                {"indicator": "IND-O0403-01", "function": "unreviewed"},
+                {"indicator": "IND-O0403-02", "function": "unreviewed"}
               ],
               "source_refs": [
                 "RAND-DISINFO-RR4373-2021",
@@ -59186,9 +59489,10 @@
                 "aftermath"
               ],
               "limitations": "correction reaches fewer people than the original seeded claim",
-              "compensates_for": [
-                "IND-O0403-03",
-                "IND-O0403-04"
+              "compensates_for": [],
+              "mitigates": [
+                {"indicator": "IND-O0403-03", "function": "unreviewed"},
+                {"indicator": "IND-O0403-04", "function": "unreviewed"}
               ],
               "source_refs": [
                 "RAND-ELECTIONS-RRA704-2020"
@@ -59206,9 +59510,10 @@
                 "aftermath"
               ],
               "limitations": "depends on external partners' willingness and capacity to act",
-              "compensates_for": [
-                "IND-O0403-02",
-                "IND-O0403-05"
+              "compensates_for": [],
+              "mitigates": [
+                {"indicator": "IND-O0403-02", "function": "unreviewed"},
+                {"indicator": "IND-O0403-05", "function": "unreviewed"}
               ],
               "source_refs": [
                 "CISA-DISINFO-TACTICS"
@@ -59226,9 +59531,10 @@
                 "aftermath"
               ],
               "limitations": "hard to apply when intermediary independence is genuinely uncertain",
-              "compensates_for": [
-                "IND-O0403-01",
-                "IND-O0403-05"
+              "compensates_for": [],
+              "mitigates": [
+                {"indicator": "IND-O0403-01", "function": "unreviewed"},
+                {"indicator": "IND-O0403-05", "function": "unreviewed"}
               ],
               "source_refs": [
                 "RAND-DISINFO-RR4373-2021"
@@ -59665,13 +59971,15 @@
               ],
               "limitations": "protects only systems already under the logging regime at time of the act",
               "compensates_for": [
-                "IND-O0404-01",
-                "IND-O0404-02",
                 "CM-0402-01",
                 "CM-0404-01",
                 "CM-0404-02",
                 "CM-F0404-01",
                 "CM-I0405-02"
+              ],
+              "mitigates": [
+                {"indicator": "IND-O0404-01", "function": "unreviewed"},
+                {"indicator": "IND-O0404-02", "function": "unreviewed"}
               ],
               "source_refs": [
                 "CERT-CSG-7-2022",
@@ -59691,9 +59999,11 @@
               ],
               "limitations": "cannot recover records already destroyed before the hold engages",
               "compensates_for": [
-                "IND-O0404-03",
-                "IND-O0404-04",
                 "CM-I0403-04"
+              ],
+              "mitigates": [
+                {"indicator": "IND-O0404-03", "function": "unreviewed"},
+                {"indicator": "IND-O0404-04", "function": "unreviewed"}
               ],
               "source_refs": [
                 "NITTF-GUIDE-2017",
@@ -59714,10 +60024,12 @@
               ],
               "limitations": "high-privilege insiders may destroy records within their normal authority",
               "compensates_for": [
-                "IND-O0404-02",
-                "IND-O0404-05",
                 "CM-F0407-04",
                 "CM-I0405-01"
+              ],
+              "mitigates": [
+                {"indicator": "IND-O0404-02", "function": "unreviewed"},
+                {"indicator": "IND-O0404-05", "function": "unreviewed"}
               ],
               "source_refs": [
                 "CERT-CSG-7-2022",
@@ -59738,9 +60050,11 @@
               ],
               "limitations": "adds operational friction and can be undermined by collusion",
               "compensates_for": [
-                "IND-O0404-01",
-                "IND-O0404-04",
                 "CM-I0403-01"
+              ],
+              "mitigates": [
+                {"indicator": "IND-O0404-01", "function": "unreviewed"},
+                {"indicator": "IND-O0404-04", "function": "unreviewed"}
               ],
               "source_refs": [
                 "CERT-CSG-7-2022"
@@ -60191,9 +60505,11 @@
               ],
               "limitations": "well-cultivated insiders may present no overt behavioral change",
               "compensates_for": [
-                "IND-O0405-01",
-                "IND-O0405-02",
                 "CM-I0405-03"
+              ],
+              "mitigates": [
+                {"indicator": "IND-O0405-01", "function": "unreviewed"},
+                {"indicator": "IND-O0405-02", "function": "unreviewed"}
               ],
               "source_refs": [
                 "CERT-CSG-7-2022",
@@ -60213,9 +60529,11 @@
               ],
               "limitations": "fear of exposure can still deter reporting despite protections",
               "compensates_for": [
-                "IND-O0405-03",
-                "IND-O0405-04",
                 "CM-F0405-01"
+              ],
+              "mitigates": [
+                {"indicator": "IND-O0405-03", "function": "unreviewed"},
+                {"indicator": "IND-O0405-04", "function": "unreviewed"}
               ],
               "source_refs": [
                 "NITTF-GUIDE-2017",
@@ -60235,10 +60553,12 @@
               ],
               "limitations": "external cutouts outside institutional data remain partially invisible",
               "compensates_for": [
-                "IND-O0405-02",
-                "IND-O0405-05",
                 "CM-0404-01",
                 "CM-F0404-04"
+              ],
+              "mitigates": [
+                {"indicator": "IND-O0405-02", "function": "unreviewed"},
+                {"indicator": "IND-O0405-05", "function": "unreviewed"}
               ],
               "source_refs": [
                 "CALHOUN-WESTON-2003",
@@ -60257,9 +60577,10 @@
                 "aftermath"
               ],
               "limitations": "premature revocation may alert the network or harm an innocent employee",
-              "compensates_for": [
-                "IND-O0405-01",
-                "IND-O0405-04"
+              "compensates_for": [],
+              "mitigates": [
+                {"indicator": "IND-O0405-01", "function": "unreviewed"},
+                {"indicator": "IND-O0405-04", "function": "unreviewed"}
               ],
               "source_refs": [
                 "CERT-CSG-7-2022"
@@ -60691,9 +61012,10 @@
                 "aftermath"
               ],
               "limitations": "recertification misses backdoors created outside formal access systems",
-              "compensates_for": [
-                "IND-O0406-01",
-                "IND-O0406-02"
+              "compensates_for": [],
+              "mitigates": [
+                {"indicator": "IND-O0406-01", "function": "unreviewed"},
+                {"indicator": "IND-O0406-02", "function": "unreviewed"}
               ],
               "source_refs": [
                 "CERT-CSG-7-2022",
@@ -60712,9 +61034,10 @@
                 "aftermath"
               ],
               "limitations": "genuinely dormant footholds generate little signal until activated",
-              "compensates_for": [
-                "IND-O0406-02",
-                "IND-O0406-03"
+              "compensates_for": [],
+              "mitigates": [
+                {"indicator": "IND-O0406-02", "function": "unreviewed"},
+                {"indicator": "IND-O0406-03", "function": "unreviewed"}
               ],
               "source_refs": [
                 "CISA-CONVERGE-2021",
@@ -60733,9 +61056,10 @@
                 "aftermath"
               ],
               "limitations": "incomplete rotation leaves overlooked footholds active",
-              "compensates_for": [
-                "IND-O0406-01",
-                "IND-O0406-04"
+              "compensates_for": [],
+              "mitigates": [
+                {"indicator": "IND-O0406-01", "function": "unreviewed"},
+                {"indicator": "IND-O0406-04", "function": "unreviewed"}
               ],
               "source_refs": [
                 "CERT-CSG-7-2022"
@@ -60753,9 +61077,10 @@
                 "aftermath"
               ],
               "limitations": "influence positioning is hard to distinguish from legitimate participation",
-              "compensates_for": [
-                "IND-O0406-04",
-                "IND-O0406-05"
+              "compensates_for": [],
+              "mitigates": [
+                {"indicator": "IND-O0406-04", "function": "unreviewed"},
+                {"indicator": "IND-O0406-05", "function": "unreviewed"}
               ],
               "source_refs": [
                 "RAND-ELECTIONS-RRA704-2020",
@@ -61193,9 +61518,10 @@
                 "aftermath"
               ],
               "limitations": "off-institution and cross-border flows fall outside internal visibility",
-              "compensates_for": [
-                "IND-O0407-01",
-                "IND-O0407-02"
+              "compensates_for": [],
+              "mitigates": [
+                {"indicator": "IND-O0407-01", "function": "unreviewed"},
+                {"indicator": "IND-O0407-02", "function": "unreviewed"}
               ],
               "source_refs": [
                 "CHAINALYSIS-CCR-2024",
@@ -61214,9 +61540,10 @@
                 "aftermath"
               ],
               "limitations": "funds already moved off institutional accounts cannot be frozen internally",
-              "compensates_for": [
-                "IND-O0407-02",
-                "IND-O0407-03"
+              "compensates_for": [],
+              "mitigates": [
+                {"indicator": "IND-O0407-02", "function": "unreviewed"},
+                {"indicator": "IND-O0407-03", "function": "unreviewed"}
               ],
               "source_refs": [
                 "CHAINALYSIS-CCR-2024",
@@ -61237,9 +61564,11 @@
               ],
               "limitations": "layered ownership structures can defeat verification",
               "compensates_for": [
-                "IND-O0407-03",
-                "IND-O0407-04",
                 "CM-0405-04"
+              ],
+              "mitigates": [
+                {"indicator": "IND-O0407-03", "function": "unreviewed"},
+                {"indicator": "IND-O0407-04", "function": "unreviewed"}
               ],
               "source_refs": [
                 "CHAINALYSIS-CCR-2024"
@@ -61257,9 +61586,10 @@
                 "aftermath"
               ],
               "limitations": "tracing depends on cooperation and jurisdiction of downstream institutions",
-              "compensates_for": [
-                "IND-O0407-04",
-                "IND-O0407-05"
+              "compensates_for": [],
+              "mitigates": [
+                {"indicator": "IND-O0407-04", "function": "unreviewed"},
+                {"indicator": "IND-O0407-05", "function": "unreviewed"}
               ],
               "source_refs": [
                 "CHAINALYSIS-CCR-2024",
@@ -61684,9 +62014,11 @@
               ],
               "limitations": "depends on the threat actor communicating assessment openly rather than in closed channels",
               "compensates_for": [
-                "IND-O0408-01",
-                "IND-O0408-02",
                 "CM-0406-01"
+              ],
+              "mitigates": [
+                {"indicator": "IND-O0408-01", "function": "unreviewed"},
+                {"indicator": "IND-O0408-02", "function": "unreviewed"}
               ],
               "source_refs": [
                 "CISA-DISINFO-TACTICS",
@@ -61705,9 +62037,10 @@
                 "aftermath"
               ],
               "limitations": "requires candid internal reporting that organizational politics can suppress",
-              "compensates_for": [
-                "IND-O0408-03",
-                "IND-O0408-04"
+              "compensates_for": [],
+              "mitigates": [
+                {"indicator": "IND-O0408-03", "function": "unreviewed"},
+                {"indicator": "IND-O0408-04", "function": "unreviewed"}
               ],
               "source_refs": [
                 "GISF-SECURITYTOGO-2020"
@@ -61727,9 +62060,11 @@
               ],
               "limitations": "disclosure duties or media pressure can force release of some impact data",
               "compensates_for": [
-                "IND-O0408-02",
-                "IND-O0408-05",
                 "CM-F0406-03"
+              ],
+              "mitigates": [
+                {"indicator": "IND-O0408-02", "function": "unreviewed"},
+                {"indicator": "IND-O0408-05", "function": "unreviewed"}
               ],
               "source_refs": [
                 "CISA-DISINFO-TACTICS"
@@ -61747,8 +62082,9 @@
                 "aftermath"
               ],
               "limitations": "cannot fully control informal disclosures across a large workforce",
-              "compensates_for": [
-                "IND-O0408-04"
+              "compensates_for": [],
+              "mitigates": [
+                {"indicator": "IND-O0408-04", "function": "unreviewed"}
               ],
               "source_refs": [
                 "RAND-DISINFO-RR4373-2021",
@@ -62177,9 +62513,10 @@
                 "aftermath"
               ],
               "limitations": "sophisticated threat actors rotate infrastructure faster than manual mapping can track",
-              "compensates_for": [
-                "IND-O0409-01",
-                "IND-O0409-02"
+              "compensates_for": [],
+              "mitigates": [
+                {"indicator": "IND-O0409-01", "function": "unreviewed"},
+                {"indicator": "IND-O0409-02", "function": "unreviewed"}
               ],
               "source_refs": [
                 "RAND-DISINFO-RR4373-2021"
@@ -62197,9 +62534,10 @@
                 "aftermath"
               ],
               "limitations": "evidentiary linkage weakens as time and infrastructure changes accumulate",
-              "compensates_for": [
-                "IND-O0409-03",
-                "IND-O0409-04"
+              "compensates_for": [],
+              "mitigates": [
+                {"indicator": "IND-O0409-03", "function": "unreviewed"},
+                {"indicator": "IND-O0409-04", "function": "unreviewed"}
               ],
               "source_refs": [
                 "GULYASH-FIELD-OPS-2004-2026",
@@ -62218,9 +62556,10 @@
                 "aftermath"
               ],
               "limitations": "depends on partner willingness and cross-jurisdiction cooperation to act on linkage",
-              "compensates_for": [
-                "IND-O0409-02",
-                "IND-O0409-05"
+              "compensates_for": [],
+              "mitigates": [
+                {"indicator": "IND-O0409-02", "function": "unreviewed"},
+                {"indicator": "IND-O0409-05", "function": "unreviewed"}
               ],
               "source_refs": [
                 "RAND-ELECTIONS-RRA704-2020"
@@ -62238,9 +62577,10 @@
                 "aftermath"
               ],
               "limitations": "human recognition lags well-resourced brand engineering",
-              "compensates_for": [
-                "IND-O0409-01",
-                "IND-O0409-03"
+              "compensates_for": [],
+              "mitigates": [
+                {"indicator": "IND-O0409-01", "function": "unreviewed"},
+                {"indicator": "IND-O0409-03", "function": "unreviewed"}
               ],
               "source_refs": [
                 "CISA-DISINFO-TACTICS"
@@ -62673,9 +63013,11 @@
               ],
               "limitations": "claims made in closed forums or to select journalists can escape monitoring",
               "compensates_for": [
-                "IND-O0410-01",
-                "IND-O0410-02",
                 "CM-0407-04"
+              ],
+              "mitigates": [
+                {"indicator": "IND-O0410-01", "function": "unreviewed"},
+                {"indicator": "IND-O0410-02", "function": "unreviewed"}
               ],
               "source_refs": [
                 "CISA-DISINFO-TACTICS"
@@ -62693,9 +63035,10 @@
                 "aftermath"
               ],
               "limitations": "fast-moving media cycles can outpace even a prepared protocol",
-              "compensates_for": [
-                "IND-O0410-03",
-                "IND-O0410-04"
+              "compensates_for": [],
+              "mitigates": [
+                {"indicator": "IND-O0410-03", "function": "unreviewed"},
+                {"indicator": "IND-O0410-04", "function": "unreviewed"}
               ],
               "source_refs": [
                 "GISF-SECURITYTOGO-2020",
@@ -62714,9 +63057,10 @@
                 "aftermath"
               ],
               "limitations": "self-serving claims may be false or exaggerated and require independent corroboration",
-              "compensates_for": [
-                "IND-O0410-02",
-                "IND-O0410-05"
+              "compensates_for": [],
+              "mitigates": [
+                {"indicator": "IND-O0410-02", "function": "unreviewed"},
+                {"indicator": "IND-O0410-05", "function": "unreviewed"}
               ],
               "source_refs": [
                 "FBI-PREATTACK-2018"
@@ -62735,9 +63079,11 @@
               ],
               "limitations": "cannot prevent a determined threat actor from reaching media directly",
               "compensates_for": [
-                "IND-O0410-01",
-                "IND-O0410-03",
                 "CM-I0407-01"
+              ],
+              "mitigates": [
+                {"indicator": "IND-O0410-01", "function": "unreviewed"},
+                {"indicator": "IND-O0410-03", "function": "unreviewed"}
               ],
               "source_refs": [
                 "CALHOUN-WESTON-2003"
@@ -63156,9 +63502,11 @@
               ],
               "limitations": "cross-platform and closed-channel spread limits full visibility",
               "compensates_for": [
-                "IND-O0411-01",
-                "IND-O0411-02",
                 "CM-0408-04"
+              ],
+              "mitigates": [
+                {"indicator": "IND-O0411-01", "function": "unreviewed"},
+                {"indicator": "IND-O0411-02", "function": "unreviewed"}
               ],
               "source_refs": [
                 "RAND-DISINFO-RR4373-2021"
@@ -63176,9 +63524,10 @@
                 "aftermath"
               ],
               "limitations": "platform response is slow and inconsistent across jurisdictions",
-              "compensates_for": [
-                "IND-O0411-02",
-                "IND-O0411-03"
+              "compensates_for": [],
+              "mitigates": [
+                {"indicator": "IND-O0411-02", "function": "unreviewed"},
+                {"indicator": "IND-O0411-03", "function": "unreviewed"}
               ],
               "source_refs": [
                 "CISA-DISINFO-TACTICS"
@@ -63197,10 +63546,12 @@
               ],
               "limitations": "correction rarely reaches the same audience as the original amplification",
               "compensates_for": [
-                "IND-O0411-04",
-                "IND-O0411-05",
                 "CM-0408-03",
                 "CM-F0410-03"
+              ],
+              "mitigates": [
+                {"indicator": "IND-O0411-04", "function": "unreviewed"},
+                {"indicator": "IND-O0411-05", "function": "unreviewed"}
               ],
               "source_refs": [
                 "RAND-ELECTIONS-RRA704-2020",
@@ -63219,9 +63570,10 @@
                 "aftermath"
               ],
               "limitations": "outrage and curiosity drive engagement that policy alone cannot suppress",
-              "compensates_for": [
-                "IND-O0411-01",
-                "IND-O0411-04"
+              "compensates_for": [],
+              "mitigates": [
+                {"indicator": "IND-O0411-01", "function": "unreviewed"},
+                {"indicator": "IND-O0411-04", "function": "unreviewed"}
               ],
               "source_refs": [
                 "CISA-DISINFO-TACTICS"
@@ -63662,9 +64014,10 @@
                 "aftermath"
               ],
               "limitations": "acute crises pressure leadership to deviate from policy under duress",
-              "compensates_for": [
-                "IND-O0412-01",
-                "IND-O0412-02"
+              "compensates_for": [],
+              "mitigates": [
+                {"indicator": "IND-O0412-01", "function": "unreviewed"},
+                {"indicator": "IND-O0412-02", "function": "unreviewed"}
               ],
               "source_refs": [
                 "CALHOUN-WESTON-2003",
@@ -63684,9 +64037,11 @@
               ],
               "limitations": "demands delivered privately to individuals may bypass institutional monitoring",
               "compensates_for": [
-                "IND-O0412-02",
-                "IND-O0412-03",
                 "CM-F0412-01"
+              ],
+              "mitigates": [
+                {"indicator": "IND-O0412-02", "function": "unreviewed"},
+                {"indicator": "IND-O0412-03", "function": "unreviewed"}
               ],
               "source_refs": [
                 "CHAINALYSIS-CCR-2024"
@@ -63704,9 +64059,10 @@
                 "aftermath"
               ],
               "limitations": "safety-of-life situations can override a strict no-concession posture",
-              "compensates_for": [
-                "IND-O0412-04",
-                "IND-O0412-05"
+              "compensates_for": [],
+              "mitigates": [
+                {"indicator": "IND-O0412-04", "function": "unreviewed"},
+                {"indicator": "IND-O0412-05", "function": "unreviewed"}
               ],
               "source_refs": [
                 "CALHOUN-WESTON-2003"
@@ -63724,9 +64080,10 @@
                 "aftermath"
               ],
               "limitations": "targeted individuals may act to protect themselves outside the protocol",
-              "compensates_for": [
-                "IND-O0412-01",
-                "IND-O0412-04"
+              "compensates_for": [],
+              "mitigates": [
+                {"indicator": "IND-O0412-01", "function": "unreviewed"},
+                {"indicator": "IND-O0412-04", "function": "unreviewed"}
               ],
               "source_refs": [
                 "NTAC-SYSTEMS-2020",
@@ -64147,9 +64504,10 @@
                 "aftermath"
               ],
               "limitations": "recruitment increasingly moves to encrypted and invite-only spaces beyond monitoring reach",
-              "compensates_for": [
-                "IND-O0413-01",
-                "IND-O0413-02"
+              "compensates_for": [],
+              "mitigates": [
+                {"indicator": "IND-O0413-01", "function": "unreviewed"},
+                {"indicator": "IND-O0413-02", "function": "unreviewed"}
               ],
               "source_refs": [
                 "CTC-INFRATERROR-2026",
@@ -64169,9 +64527,10 @@
                 "aftermath"
               ],
               "limitations": "details already public cannot be recalled and mirrors persist",
-              "compensates_for": [
-                "IND-O0413-03",
-                "IND-O0413-04"
+              "compensates_for": [],
+              "mitigates": [
+                {"indicator": "IND-O0413-03", "function": "unreviewed"},
+                {"indicator": "IND-O0413-04", "function": "unreviewed"}
               ],
               "source_refs": [
                 "START-GTD-2020",
@@ -64190,9 +64549,10 @@
                 "aftermath"
               ],
               "limitations": "information sharing depends on partner capacity and legal constraints",
-              "compensates_for": [
-                "IND-O0413-02",
-                "IND-O0413-05"
+              "compensates_for": [],
+              "mitigates": [
+                {"indicator": "IND-O0413-02", "function": "unreviewed"},
+                {"indicator": "IND-O0413-05", "function": "unreviewed"}
               ],
               "source_refs": [
                 "FBI-HATECRIME-2024",
@@ -64211,9 +64571,10 @@
                 "aftermath"
               ],
               "limitations": "recruitment targeting individuals outside the workforce falls beyond internal awareness",
-              "compensates_for": [
-                "IND-O0413-01",
-                "IND-O0413-04"
+              "compensates_for": [],
+              "mitigates": [
+                {"indicator": "IND-O0413-01", "function": "unreviewed"},
+                {"indicator": "IND-O0413-04", "function": "unreviewed"}
               ],
               "source_refs": [
                 "CERT-CSG-7-2022",
@@ -74770,9 +75131,10 @@
                 "mobilization"
               ],
               "limitations": "A single alignment can be coincidental, so the measure raises attention rather than confirming intent; effectiveness depends on maintaining an accurate, current model of the operational calendar.",
-              "compensates_for": [
-                "IND-I0211-01",
-                "IND-I0211-03"
+              "compensates_for": [],
+              "mitigates": [
+                {"indicator": "IND-I0211-01", "function": "unreviewed"},
+                {"indicator": "IND-I0211-03", "function": "unreviewed"}
               ],
               "source_refs": [
                 "NIST-SP800-82-2023",
@@ -74792,9 +75154,10 @@
                 "execution"
               ],
               "limitations": "Many windows (seasonal load peaks, required maintenance) cannot be moved; compensating coverage adds cost and may be relaxed exactly when budgets are tight.",
-              "compensates_for": [
-                "IND-I0211-02",
-                "IND-I0211-04"
+              "compensates_for": [],
+              "mitigates": [
+                {"indicator": "IND-I0211-02", "function": "unreviewed"},
+                {"indicator": "IND-I0211-04", "function": "unreviewed"}
               ],
               "source_refs": [
                 "NIST-SP800-82-2023",

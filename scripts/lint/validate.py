@@ -94,8 +94,9 @@ CHECK_TITLES = {
     "V20": "axis_confidence enum values and axis names",
     "V21": "modality facet presence, enum, and cross-field invariants",
     "V22": "conditioning_guidance shape, factor enum, and voice constraints",
+    "V23": "mitigates edge shape and dangling indicator ref",
 }
-CHECK_IDS = [f"V{n:02d}" for n in range(1, 23)]
+CHECK_IDS = [f"V{n:02d}" for n in range(1, 24)]
 
 
 # Fallback thresholds if escalation_rubric.severity_thresholds is absent.
@@ -305,16 +306,43 @@ def run_all_checks(raw_text: str, data: dict) -> dict[str, list[str]]:
             _check_child_id(fail, "CM", cid, letter, digits, tid)
             _check_source_refs(fail, cid, cm, bibliography)
             for ref in cm.get("compensates_for", []) or []:
-                # compensates_for resolves against countermeasures or
-                # indicators; each namespace is checked directly.
-                if ref in cm_ids or ref in ind_ids:
+                # compensates_for is CM->CM redundancy only; indicator
+                # coverage lives in mitigates. An IND- referent here is a
+                # type error, not a dangling ref.
+                if isinstance(ref, str) and ref.startswith("IND-"):
+                    fail(
+                        "V07",
+                        cid,
+                        f"compensates_for '{ref}' targets an indicator; "
+                        f"indicator coverage belongs in mitigates",
+                    )
+                    continue
+                if ref in cm_ids:
                     continue
                 fail(
                     "V07",
                     cid,
-                    f"compensates_for '{ref}' resolves to no countermeasure "
-                    f"or indicator",
+                    f"compensates_for '{ref}' resolves to no countermeasure",
                 )
+            for edge in cm.get("mitigates", []) or []:
+                if not isinstance(edge, dict):
+                    fail("V23", cid, "mitigates entry is not an edge object")
+                    continue
+                ref = edge.get("indicator")
+                func = edge.get("function")
+                if func not in ("prevent", "detect", "deny", "unreviewed"):
+                    fail(
+                        "V23",
+                        cid,
+                        f"mitigates edge '{ref}' has invalid function "
+                        f"'{func}'",
+                    )
+                if ref not in ind_ids:
+                    fail(
+                        "V23",
+                        cid,
+                        f"mitigates '{ref}' resolves to no indicator",
+                    )
 
         for rp in tactic.get("response_protocols", []) or []:
             if not isinstance(rp, dict):

@@ -1296,9 +1296,38 @@
           "uniqueItems": true,
           "items": {
             "type": "string",
-            "pattern": "^(CM|IND)-[FOI]?[0-9]{4}-[0-9]{2}$"
+            "pattern": "^CM-[FOI]?[0-9]{4}-[0-9]{2}$"
           },
-          "description": "Detection Mesh compensation records (transitional). CM- referents record dyadic countermeasure-to-countermeasure compensation (the earlier authoring form, present in the People and Facilities matrices); IND- referents record per-indicator coverage (the forward authoring standard). New authoring records coverage at indicator grain (IND- referents); the committed successor is a scored indicator-level coverage relation from which case compensation is computed."
+          "description": "Countermeasure-to-countermeasure compensation: this countermeasure compensates for the ABSENCE or failure of the referenced countermeasure (redundancy relation). Indicator coverage does NOT live here; it lives in mitigates. An IND- referent in this field is a type error."
+        },
+        "mitigates": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "indicator",
+              "function"
+            ],
+            "properties": {
+              "indicator": {
+                "type": "string",
+                "pattern": "^IND-[FOI]?[0-9]{4}-[0-9]{2}$"
+              },
+              "function": {
+                "type": "string",
+                "enum": [
+                  "prevent",
+                  "detect",
+                  "deny",
+                  "unreviewed"
+                ],
+                "description": "How this countermeasure acts on the behavior's pathway: prevent (stops the act), detect (surfaces the act), deny (removes the act's value). Authored per edge, never inherited from the countermeasure. 'unreviewed' is a provisional value for migrated legacy edges pending review; it must reach zero before the coverage layer ships, and a detect-only edge caps coverage at partial."
+              }
+            }
+          },
+          "description": "The countermeasure-to-indicator mitigation relation: this countermeasure prevents, detects, or denies the referenced behavior, per the ratified linking criterion (acts on the behavior's pathway; same-tactic membership is not sufficient; cross-tactic edges are expected where a countermeasure genuinely reaches). This is the coverage-derivation input, the scored indicator-level coverage relation committed by the earlier transitional note."
         },
         "target_identity": {
           "type": "array",

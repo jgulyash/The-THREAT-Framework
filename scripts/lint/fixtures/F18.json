@@ -1,0 +1,13 @@
+{
+ "id": "F18",
+ "category": "type errors",
+ "description": "Append an IND- referent to compensates_for, which is CM->CM redundancy only after the relation split; V07 fires as a type error (indicator coverage belongs in mitigates).",
+ "expected_check": "V07",
+ "mutations": [
+  {
+   "op": "append",
+   "path": "matrices.person.tactics.0.countermeasures.0.compensates_for",
+   "value": "IND-0101-01"
+  }
+ ]
+}

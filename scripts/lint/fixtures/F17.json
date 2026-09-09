@@ -1,0 +1,13 @@
+{
+ "id": "F17",
+ "category": "dangling refs",
+ "description": "Append a mitigates edge whose indicator resolves to nothing, so V23 fires (coverage-derivation input must have referential integrity).",
+ "expected_check": "V23",
+ "mutations": [
+  {
+   "op": "append",
+   "path": "matrices.facility.tactics.1.countermeasures.2.mitigates",
+   "value": {"indicator": "IND-9999-99", "function": "detect"}
+  }
+ ]
+}

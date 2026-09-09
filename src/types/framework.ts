@@ -139,8 +139,15 @@ export interface Countermeasure {
   phase_relevance?: string[];
   limitations: string;
   source_refs: string[];
-  // V1.1 Detection Mesh
+  // V1.1 Detection Mesh; V1.8 relation split: CM->CM redundancy only
   compensates_for?: string[];
+  // V1.8 coverage relation: CM->indicator mitigation, typed per edge
+  mitigates?: MitigatesEdge[];
+}
+
+export interface MitigatesEdge {
+  indicator: string;
+  function: 'prevent' | 'detect' | 'deny' | 'unreviewed';
 }
 
 export interface ResponseProtocol {
