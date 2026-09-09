@@ -1,0 +1,184 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://jgulyash.github.io/THREAT-Matrix/data/coverage.schema.json",
+  "title": "THREAT Matrix Coverage Contract",
+  "description": "The vulnerability term of the risk equation: consumer-held countermeasure deployment records and the derived coverage band, computed against the framework's mitigates relation (countermeasure to indicator, typed by function). Boundary-interface artifact: the framework defines these shapes and the derivation rule; each organization holds its own records, which are never published and never ship in framework.json. The full normative derivation rule lives in docs/methodology/coverage-derivation.md; the descriptions here are binding summaries of it. Derive-dont-store: a coverage band is a query result recomputed from the current records at each derivation, never authoritative stored state.",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "cm_deployment_record": {
+      "$ref": "#/$defs/cm_deployment_record"
+    },
+    "coverage_derivation": {
+      "$ref": "#/$defs/coverage_derivation"
+    }
+  },
+  "$defs": {
+    "cm_deployment_record": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "protected_target",
+        "deployments",
+        "basis",
+        "reviewed"
+      ],
+      "description": "Consumer-held record of which framework countermeasures are actually deployed for one protected target. Sensitive by nature: with its derivations it forms a remediation register, and record-generation should be structured under counsel where litigation exposure is live. Adopting the framework creates a notice record; the disposition discipline on exposed derivations is what keeps that record defensible.",
+      "properties": {
+        "protected_target": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Consumer-side reference to the protected target this record covers (a role, site, system, or asset class; never a named private individual in the published artifact sense)."
+        },
+        "deployments": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/deployment"
+          },
+          "description": "One entry per countermeasure the organization has deployed, partially deployed, planned, or explicitly declined for this target."
+        },
+        "basis": {
+          "type": "string",
+          "minLength": 1,
+          "description": "How this record was compiled: survey, audit, physical walkdown."
+        },
+        "reviewed": {
+          "type": "string",
+          "format": "date",
+          "description": "Date of the last whole-record review."
+        }
+      }
+    },
+    "deployment": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "cm_id",
+        "status"
+      ],
+      "properties": {
+        "cm_id": {
+          "type": "string",
+          "pattern": "^CM-[FOI]?[0-9]{4}-[0-9]{2}$",
+          "description": "A framework countermeasure id; the enumeration is the framework's countermeasure catalog."
+        },
+        "status": {
+          "type": "string",
+          "enum": [
+            "deployed",
+            "partial",
+            "planned",
+            "not_deployed"
+          ],
+          "description": "Deployment state. partial covers deployed-but-degraded or limited-scope; planned and not_deployed never contribute to coverage."
+        },
+        "applies_to": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "description": "Structured scope: the target classes or zones this deployment actually reaches (replaces free-text-only scoping so a mis-scoped control is visible to the derivation). A deployment whose applies_to does not reach the assessed target does not contribute to that target's coverage."
+        },
+        "scope_note": {
+          "type": "string",
+          "description": "Free-text scope detail supplementing applies_to; never a substitute for it."
+        },
+        "verified": {
+          "type": "string",
+          "format": "date",
+          "description": "Date the control was last verified OPERATIONAL (not merely procured). A deployment with no verified date, or one older than the staleness window (default 12 months) at derivation time, is treated as unverified and contributes at most partial coverage. The staleness window guards the false-covered failure: verify-once must not read as covered forever."
+        }
+      }
+    },
+    "coverage_derivation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "protected_target",
+        "indicator_id",
+        "coverage_band",
+        "derivation_date",
+        "framework_version"
+      ],
+      "description": "The audited output of one coverage derivation for one target x indicator pairing. Stateless: recomputed from the current records at each derivation; a band change re-derives posture from the matrix cell, and the signed-deviation machinery applies only to moves below the cell default, never to remediation-driven returns to it. The derivation intersects the framework's mitigates edges for the indicator with the target's cm_deployment_record, after excluding deployments that do not reach the target (applies_to) and, where the assessed threat actor's position defeats a control (an insider holding the credentials), excluding the defeated controls before banding.",
+      "properties": {
+        "protected_target": {
+          "type": "string",
+          "minLength": 1
+        },
+        "indicator_id": {
+          "type": "string",
+          "pattern": "^IND-[FOI]?[0-9]{4}-[0-9]{2}$"
+        },
+        "coverage_band": {
+          "type": "string",
+          "enum": [
+            "covered",
+            "partial",
+            "exposed",
+            "not_assessable"
+          ],
+          "description": "covered: every relevant mitigating countermeasure class is deployed, verified, in scope, and at least one contributing edge is prevent or deny (a detect-only edge set, or any reliance on unreviewed edges, caps the band at partial). partial: some mitigation deployed, or deployments unverified, stale, or detect-only where it matters. exposed: no relevant mitigating countermeasure deployed, or critical-path dominance applies. not_assessable: the indicator carries no mitigates edge by design (no organizationally deployable control exists for the behavior); excluded from covered AND from the exposed posture step-up. Critical-path dominance: if the countermeasures mitigating the highest-band indicators in play are absent, the band is exposed regardless of other deployments."
+        },
+        "derivation_date": {
+          "type": "string",
+          "format": "date"
+        },
+        "framework_version": {
+          "type": "string",
+          "minLength": 1,
+          "description": "The framework content version whose mitigates relation this derivation ran against; the audit line cites it."
+        },
+        "oldest_input_age_months": {
+          "type": "number",
+          "minimum": 0,
+          "description": "Age in months of the oldest input record consumed (deployment verified dates, record reviewed dates). Carried on the audit line so a stale join is visible on its face."
+        },
+        "missing_critical_path": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^CM-[FOI]?[0-9]{4}-[0-9]{2}$"
+          },
+          "description": "When critical-path dominance drives the band to exposed, the absent countermeasures that drove it: the gap list the posture decision documents."
+        },
+        "disposition": {
+          "type": "string",
+          "enum": [
+            "funded",
+            "accepted_with_rationale",
+            "transferred",
+            "compensating_interim"
+          ],
+          "description": "REQUIRED when coverage_band is exposed: the remediation disposition that makes the record a remediation register rather than a gap map. A bare exposed flag with no disposition is the indefensible artifact; a gap with a funded plan and a review date is a defensible one."
+        },
+        "disposition_review_date": {
+          "type": "string",
+          "format": "date",
+          "description": "REQUIRED alongside disposition: when the disposition is next reviewed."
+        }
+      },
+      "allOf": [
+        {
+          "if": {
+            "required": [
+              "coverage_band"
+            ],
+            "properties": {
+              "coverage_band": {
+                "const": "exposed"
+              }
+            }
+          },
+          "then": {
+            "required": [
+              "disposition",
+              "disposition_review_date"
+            ]
+          }
+        }
+      ]
+    }
+  }
+}
